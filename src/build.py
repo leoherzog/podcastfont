@@ -81,14 +81,14 @@ with open('../web/css/PodcastFont.css', 'w') as css_file:
 	css_file.write(css_string)
 os.remove(icons_map_filename)
 
-#print('Generating OTF font file…')
-#font.generate('../web/fonts/PodcastFont.otf')
-#print('Generating TTF font file…')
-#font.generate('../web/fonts/PodcastFont.ttf')
-#print('Generating WOFF font file…')
-#font.generate('../web/fonts/PodcastFont.woff')
-#print('Generating WOFF2 font file…')
-#font.generate('../web/fonts/PodcastFont.woff2')
+print('Generating OTF font file…')
+font.generate('../web/fonts/PodcastFont.otf')
+print('Generating TTF font file…')
+font.generate('../web/fonts/PodcastFont.ttf')
+print('Generating WOFF font file…')
+font.generate('../web/fonts/PodcastFont.woff')
+print('Generating WOFF2 font file…')
+font.generate('../web/fonts/PodcastFont.woff2')
 
 print('Generating ZIP package file…')
 with ZipFile('../web/package/podcastfont.zip', 'w') as zipObj:
