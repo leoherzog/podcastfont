@@ -1,0 +1,82 @@
+acast;podcaster;eb00;Acast;https://acast.com/;
+anchor;podcaster;eb01;Anchor;https://anchor.fm/;
+ausha;podcaster;eb02;Ausha;https://www.ausha.co/;
+blubrry;podcaster;eb03;Blubrry Podcasting;https://blubrry.com/;
+buzzsprout;podcaster;eb04;Buzzsprout;https://www.buzzsprout.com/;podcasting20certifiedbadge
+captivate;podcaster;eb05;Captivate;https://www.captivate.fm/;podcasting20certifiedbadge
+castopodhost;podcaster;eb06;Castopod;https://castopod.org/;podcasting20certifiedbadge,opensource
+castos;podcaster;eb07;Castos;https://castos.com/;
+fireside;podcaster;eb08;Fireside;https://fireside.fm/;podcasting20certifiedbadge
+headliner;podcaster;eb09;Headliner;https://www.headliner.app/;podcasting20certifiedbadge
+jumplink;podcaster;eb0a;Jumplink;https://jump.link/;podcasting20certifiedbadge
+justcast;podcaster;eb0b;Justcast;https://www.justcast.com/;podcasting20certifiedbadge
+libsyn;podcaster;eb0c;Libsyn;https://libsyn.com/;
+podbean;podcaster;eb0d;Podbean;https://www.podbean.com/;
+podcastic;podcaster;eb0e;Podcastic;https://www.podcastics.com/;
+podcastpage;podcaster;eb0f;Podcastpage;https://podcastpage.io/;podcasting20certifiedbadge
+podchaser;podcaster;eb10;Podchaser;https://www.podchaser.com/;
+podcloud;podcaster;eb11;podCloud;https://podcloud.fr/;
+podigee;podcaster;eb12;podigee;https://www.podigee.com/;
+podlink;podcaster;e077;Podlink;https://pod.link/;
+podlove;podcaster;eb13;Podlove;https://podlove.org/;podcasting20certifiedbadge,opensource
+podserve;podcaster;eb14;Podserve;https://www.podserve.fm/;podcasting20certifiedbadge
+powerpress;podcaster;eb15;Powerpress;https://blubrry.com/services/powerpress-plugin/;podcasting20certifiedbadge
+rsscom;podcaster;eb16;RSS.com;https://rss.com/;podcasting20certifiedbadge
+satoshisstream;podcaster;eb17;Satoshis.Stream;https://satoshis.stream/;podcasting20certifiedbadge,opensource
+simplecast;podcaster;eb18;Simplecast;https://simplecast.com/;
+spreaker;podcaster;eb19;Spreaker;https://www.spreaker.com/;
+stitcher;podcaster;eb1a;Stitcher;https://www.stitcher.com/;
+transistor;podcaster;eb1b;Transistor;https://transistor.fm/;
+whooshkaa;podcaster;eb1c;Whooshkaa;https://www.whooshkaa.com/;
+chapters;misc;eb1d;Chapters;;
+podcasting20certified;misc;eb1e;Podcasting 2.0 Certified;http://newpodcastapps.com;podcasting20certifiedbadge,opensource
+amazonmusic;listener;eb1f;Amazon Music;https://music.amazon.com/;
+antennapod;listener;eb20;AntennaPod;https://antennapod.org/;podcasting20certifiedbadge,opensource
+anytime;listener;eb21;Anytime Player;https://anytimeplayer.app/;podcasting20certifiedbadge,opensource
+breaker;listener;eb22;Breaker;https://www.breaker.audio/;
+breez;listener;eb23;Breez;https://breez.technology/;podcasting20certifiedbadge,opensource
+castamatic;listener;eb24;Castamatic;https://castamatic.com/;
+castbox;listener;eb25;Castbox;https://castbox.fm/;
+castcoverage;listener;eb26;CastCoverage;http://castcoverage.com/;podcasting20certifiedbadge
+castro;listener;eb27;Castro;https://castro.fm/;
+curiocaster;listener;eb28;Curiocaster;https://curiocaster.com/;podcasting20certifiedbadge
+deezer;listener;eb29;Deezer;https://www.deezer.com/;
+escapepod;listener;eb2a;Escapepod;https://escapepod.org/;podcasting20certifiedbadge,opensource
+fountain;listener;eb2b;Fountain;https://www.fountain.fm/;podcasting20certifiedbadge
+gnomepodcasts;listener;eb2c;Gnome Podcasts;https://gitlab.gnome.org/World/podcasts;opensource
+googlepodcasts;listener;eb2d;Google Podcasts;https://podcasts.google.com/;
+gpodder;listener;eb2e;gPodder;https://gpodder.net/;podcasting20certifiedbadge,opensource
+hypercatcher;listener;eb2f;Hypercatcher;https://hypercatcher.com/;podcasting20certifiedbadge
+iheart;listener;eb30;iHeart;https://www.iheart.com/;
+ivoox;listener;eb31;Ivoox;https://www.ivoox.com/;
+ivyfm;listener;eb32;Ivyfm;https://ivy.fm/;podcasting20certifiedbadge
+kasts;listener;eb33;Kasts;https://apps.kde.org/fr/kasts/;opensource
+mediavault;listener;eb34;mediavault;https://github.com/walkero-gr/mediavault;podcasting20certifiedbadge,opensource
+overcast;listener;eb35;Overcast;https://overcast.fm/;
+playapod;listener;eb36;Playapod;https://playapod.com/;podcasting20certifiedbadge
+playerfm;listener;eb37;Player FM;https://player.fm/;
+pocketcasts;listener;eb38;Pocketcasts;https://www.pocketcasts.com/;
+podcastaddict;listener;eb39;Podcast Addict;https://podcastaddict.com/;podcasting20certifiedbadge
+podcastchapters;listener;eb3a;Podcast Chapters;https://chaptersapp.com/;podcasting20certifiedbadge
+podcastguru;listener;eb3b;Podcastguru;https://podcastguru.io/;podcasting20certifiedbadge
+podfriend;listener;eb3c;Podfriend;https://www.podfriend.com/;podcasting20certifiedbadge,opensource
+podinstall;listener;eb3d;Podinstall;https://www.podinstall.com/;
+podlp;listener;eb3e;Podlp;https://podlp.com/;podcasting20certifiedbadge
+podstation;listener;eb3f;Podstation;https://podstation.github.io/;podcasting20certifiedbadge,opensource
+podtail;listener;eb40;Podtail;https://podtail.com/;
+podverse;listener;eb41;Podverse;https://podverse.fm/;podcasting20certifiedbadge,opensource
+radiopublic;listener;eb42;Radiopublic;https://radiopublic.com/;
+sphinxchat;listener;eb43;Sphinx;https://sphinx.chat/;podcasting20certifiedbadge,opensource
+tsacdop;listener;eb44;Tsacdop;https://www.tsacdop.app/;podcasting20certifiedbadge,opensource
+tunein;listener;eb45;TuneIn;https://tunein.com/;
+zion;listener;eb46;Zion;https://getzion.com/;podcasting20certifiedbadge,opensource
+chartable;directory;eb47;Chartable;https://chartable.com/;
+fyyd;directory;eb48;fyyd;https://fyyd.de/;podcasting20certifiedbadge
+listennotes;directory;eb49;Listennotes;https://www.listennotes.com/;
+plink;directory;eb50;Plink;https://plinkhq.com/;podcasting20certifiedbadge
+podcastindex;directory;eb51;Podcast Index;https://podcastindex.org/;podcasting20certifiedbadge,opensource
+podnews;directory;eb52;Podnews;https://podnews.net/;podcasting20certifiedbadge
+podcastfont;podcaster;eb53;Podcastfont;https://podcastfont.com/;
+podcastrepublic;listener;eb54;Podcast Republic;https://www.podcastrepublic.net/;podcasting20certifiedbadge
+activitypub;misc;eb55;ActivityPub;https://www.w3.org/TR/activitypub/;
+podcasting20certifiedbadge;misc;eb56;Podcasting 2.0 round badge;https://podcastindex.org/;podcasting20certifiedbadge,opensource

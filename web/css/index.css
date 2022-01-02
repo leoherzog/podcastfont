@@ -1,0 +1,175 @@
+@charset "UTF-8";
+
+body{
+  margin:  50px;
+  font-family: system-ui, sans-serif;
+}
+
+p {
+  margin: 6pt 0 24pt 0;
+}
+
+h1 {
+  font-family: 'Podcast Font';
+  color:  #445;
+  padding: 0 0 12pt 0;
+  border-bottom: 1px solid #eee;
+}
+
+h2 {
+  font-size: 12pt;
+  color:  #558;
+  margin: 24pt 0 0 0;
+}
+
+a {
+  color: #889;
+}
+
+a:hover {
+  color: #f44;
+}
+
+.right{
+  float: right;
+}
+
+.left {
+  float:  left;
+}
+
+.boxes {
+  display: flex;
+  flex-flow: row wrap;
+}
+.box {
+  position: relative;
+  width: 15rem;
+  height: 11rem;
+  padding: 20px;
+  margin: 10px;
+  border: none;
+  background: #fff;
+  box-shadow: 0 2px 8px 0 rgb(0 0 0 / 0.2), 0 1px 2px -1px rgb(0 0 0 / 0.1);
+  border-radius: 0.75rem;
+}
+
+.code {
+  display: block;
+  font-family: Courier, monospace;
+  background: #eee;
+  border-left: solid 10px #aab;
+  padding: 12px 12px 9px 12px;
+  margin:  12pt;
+  border-radius: 0.4rem;
+}
+
+.glyph {
+  position: absolute;
+  left: 80px;
+  top: 80px;
+  font-size: 80pt;
+  color:  #224;
+}
+
+.glyph:hover {
+  color:  #f44;
+}
+
+
+.icon-badge {
+  font-size: 18pt;
+  color: #4a6;
+}
+
+.icon-category {
+  font-size: 18pt;
+  color: #246;
+}
+
+.icon:hover {
+  color:  #f44;
+}
+
+.glyph-code {
+  font-family: Courier, monospace;
+  font-size: 9pt;
+  color: #889;
+}
+
+.glyph-code:hover {
+  color: f44;
+}
+
+.glyph-name {
+  margin: 18pt 0 0 0;
+}
+
+.glyph-unicode {
+  float: left;
+  color: #889;
+}
+
+.glyph-unicode:hover {
+  color: #f44;
+}
+
+.glyph-download {
+  position: absolute;
+  bottom: 20px;
+  right:  20px;
+}
+
+.glyph-link {
+  position: absolute;
+  bottom: 20px;
+  left:  20px;
+}
+
+.pages {
+  font-family: 'Podcast Font';
+  font-size: 10pt;
+  border-top: 1px solid #eee;
+  margin:  12pt 0 0 0;
+  padding:  5px;
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  font-family: system-ui, sans-serif;
+  font-size: 10pt;
+  visibility: hidden;
+  width: 250px;
+  background-color: #556;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 25%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #556 transparent transparent transparent;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}

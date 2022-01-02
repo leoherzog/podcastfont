@@ -1,0 +1,24 @@
+@import 'IconsMap.scss';
+
+.pi {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1; }
+
+.pi {
+  font-family: 'Podcast Font';
+  font-weight: 400; }
+@font-face {
+  font-family: 'Podcast Font';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url("../fonts/PodcastFont.woff2") format("woff2"), url("../fonts/PodcastFont.woff") format("woff"), url("../fonts/PodcastFont.ttf") format("truetype"), url("../fonts/PodcastFont.svg") format("svg"); }
+
+@each $name, $glyph in $icons {
+  .pi-#{$name}:before { content: $glyph; }
+}

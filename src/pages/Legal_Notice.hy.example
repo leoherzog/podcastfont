@@ -1,0 +1,43 @@
+context $version, $base_url, $contact_email, $pages
+
+html
+	head
+		meta charset="utf-8"
+		meta name="description" content="Podcast Font provides all the icons you need for your podcast!"
+		link rel="icon" href="favicon.ico"
+		link rel="stylesheet" href="{$base_url}css/PodcastFont.css"
+		link rel="stylesheet" href="{$base_url}css/index.css"
+		title | Legal Notice
+	body
+		h1 | Legal Notice
+
+		h2 | Publisher
+		p
+		h2 | Contact
+		p
+			if $contact_email is not None:
+				a href="mailto:$contact_email"
+					| $contact_email
+		h2 | Publication director
+		h2 | Hosting company
+		h2 | Privacy Policy
+		h2 | Cookies
+		h2 | Copyrights
+		h2 | Licences
+		h2 | Limitation of liability
+		h2 | Contractual limitations on technical data
+
+		div class="pages"
+			a href="/" | Home
+			for page in $pages:
+				| · 
+				a href="$page['html']" | $page['title']
+			| · 
+			a href="https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Icon request: icon-name&issue[description]=Please provide SVG file and all useful information here." target="_blank"
+				| Request an Icon
+			| · 
+			if $contact_email is not None:
+				a href="mailto:$contact_email"
+					| Contact us
+			span class="right"
+				| $version
