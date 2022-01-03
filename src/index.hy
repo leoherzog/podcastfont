@@ -10,7 +10,8 @@ html
 		script type="module" src="{$base_url}js/podcastfont.js"
 		title | The Podcast Font
 	body
-		h1 | The Podcast Font
+		h1 | The Podcast Font 
+		a .help href="Help.html" | Help!
 		form
 			i .pi .pi-search
 			| Filter: 
@@ -73,7 +74,7 @@ html
 							i .pi .pi-download
 							span .tooltiptext | Right-click “Save link as…” to download $glyph["glyph_name"] SVG file
 
-		div .pages
+		div .footer
 			a href="/" | Home
 			for page in $pages:
 				| · 

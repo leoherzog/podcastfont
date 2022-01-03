@@ -54,8 +54,7 @@ html
 			a href="https://code.podlibre.org/podlibre/podcastfont" | PodcastFont GIT repository
 			| .
 
-
-		div class="pages"
+		div .footer
 			a href="/" | Home
 			for page in $pages:
 				| · 
@@ -66,6 +65,6 @@ html
 			| · 
 			if $contact_email is not None:
 				a href="mailto:$contact_email"
-					| Contact us
-			span class="right"
+					| Contact us								
+			span .right
 				| $version

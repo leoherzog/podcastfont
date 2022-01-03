@@ -18,7 +18,7 @@ h1 {
 
 h2 {
   font-size: 12pt;
-  color:  #558;
+  color:  #446;
   margin: 24pt 0 0 0;
 }
 
@@ -54,6 +54,20 @@ a:hover {
   border-radius: 0.75rem;
 }
 
+.help {
+  background: #f8f8f8;
+  border: solid 1px #ddd;
+  padding: 5px 10px 5px 10px;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  text-align:  right;
+  font-size: 10pt;
+  color: #468;
+  border-radius: 0.5rem;
+}
+
+
 .code {
   display: block;
   font-family: Courier, monospace;
@@ -69,7 +83,7 @@ a:hover {
   left: 80px;
   top: 80px;
   font-size: 80pt;
-  color:  #224;
+  color:  #112;
 }
 
 .glyph:hover {
@@ -126,19 +140,19 @@ a:hover {
   left:  20px;
 }
 
-.pages {
-  font-family: 'Podcast Font';
-  font-size: 10pt;
+.footer {
+  font-family: 'system-ui, sans-serif;
+  font-size: 9pt;
   border-top: 1px solid #eee;
   margin:  12pt 0 0 0;
   padding:  5px;
 }
 
-.pages a {
+.footer a {
     color: #446;
 }
 
-.pages a:hover {
+.footer a:hover {
     color: #f44;
 }
 
