@@ -22,7 +22,7 @@ You may open an issue if you want to [request an Icon](https://code.podlibre.org
 $ git clone https://code.podlibre.org/podlibre/podcastfont.git
 ```
 
-- Copy the `.env.example` file to `.env` and customize the values according to your needs,
+- Copy the `.env.example` file to `.env` and customize the values according to your needs, if necessary,
 
 ```
 # Edit this file, save it to .env, then rebuild the website.
@@ -30,7 +30,7 @@ BASE_URL=https://domain-name.tld/
 CONTACT_EMAIL=name@domain-name.tld
 ```
 
-- Create and/or edit `.hy` pages in  the `src/pages/` folder,
+- If you want to, create and/or edit `.hy` pages in  the `src/pages/` folder using [hypertag](http://hypertag.io/),
 - go to the `src/` folder and run the `build.py` script,
 
 ```
@@ -62,7 +62,7 @@ Done.
 
 ## Adding new glyphs
 
-If you want to add new glyphs on your forked version, you just have to:
+If you want to add new glyphs, you just have to:
 
 - Create an SVG file and store it in the `src/svg/` folder,
 - Add it to a CSV file inside the `character-map/` folder.  
