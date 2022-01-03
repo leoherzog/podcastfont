@@ -61,18 +61,18 @@ for file in os.listdir("./pages"):
 		key=os.path.splitext(file)[0]
 		pages.append({"layout":file, "html": key+".html", "title": key.replace('_',' ')})
 
-print('Generating HTML index file…')
+print('Building static index.html page…')
 with open('index.hy') as layout_file:
 	with open('../web/index.html', 'w') as html_file:
 		html_file.write(hypertag.HyperHTML().render(layout_file.read(), version=version, base_url=base_url, contact_email=contact_email, pages=pages, glyphs=sorted(glyphs, key=lambda x: x['glyph_name'].lower())))
 	
 for page in pages:
-	print('Building static page "'+page['title']+'"…')
+	print('Building static "'+page['title']+'" page…')
 	with open("./pages/"+page['layout']) as page_file:
 		with open('../web/'+page['html'], 'w') as html_file:
 			html_file.write(hypertag.HyperHTML().render(page_file.read(), version=version, base_url=base_url, contact_email=contact_email, pages=pages))
 
-print('Generating CSS files…')
+print('Building PodcastFont.css Cascading Style Sheets…')
 icons_map_filename='IconsMap.scss'
 with open(icons_map_filename, 'w') as icons_map_file:
 	icons_map_file.write(icons_map)
@@ -92,6 +92,7 @@ font.generate('../web/fonts/PodcastFont.woff2')
 
 print('Generating ZIP package file…')
 with ZipFile('../web/package/podcastfont.zip', 'w') as zipObj:
+   zipObj.write('../OFL.txt','OFL.TXT')	
    zipObj.write('../web/css/PodcastFont.css','css/PodcastFont.css')
    zipObj.write('../web/fonts/PodcastFont.otf','fonts/PodcastFont.otf')
    zipObj.write('../web/fonts/PodcastFont.ttf','fonts/PodcastFont.ttf')
