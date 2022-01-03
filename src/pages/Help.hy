@@ -10,11 +10,19 @@ html
 		title | Help
 	body
 		h1 | Help
-
+		p
+			| The Podcast Font is the font you need for all your podcasts!
 		h2 | Quick Start
 		p
 			| If you want to use the Podcast Font on your website, just add the following HTML code in the <head> section of your pages:
-			span class="code" | <link rel="stylesheet" href="{$base_url}css/PodcastFont.css" />
+			span .code | <link rel="stylesheet" href="{$base_url}css/PodcastFont.css" />
+			| Or you can import it in your own CSS:
+			span .code
+				| <style>
+				br
+				|   @import url('{$base_url}css/PodcastFont.css');
+				br
+				| </style>
 			| Then copy the code of the icon you want to insert and past it into your HTML code.
 			br
 			| For instance:
