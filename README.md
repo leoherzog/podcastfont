@@ -73,7 +73,7 @@ Columns are:
   - `glyph_unicode`: the Unicode Hex number for this glyph,
   - `glyph_name`: the long name for this glyph,
   - `glyph_url`: if there is a website talking about this glyph, put it here,
-  - `glyph_attributes`: attributes for this glyph (',' separated)
+  - `glyph_attributes`: attributes for this glyph (`,` separated)
 
 Example:
 
