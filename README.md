@@ -9,7 +9,7 @@ If you need help *using* the website, please go to [podcastfont.com help page](h
 
 You may open an issue if you want to [request an Icon](https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Icon%20request:%20icon-name&issue[description]=Please%20provide%20SVG%20file%20and%20all%20useful%20information%20here.) or [report an error](https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Error%20reporting:%20icon-name&issue[description]=Please%20provide%20all%20useful%20information%20here.).
 
-## Generate the website:
+## Generate the website
 
 - Clone this repository,
 
@@ -46,7 +46,7 @@ Generating ZIP package file…
 Done.
 ```
 
-## Requirements:
+## Requirements
 
 - [python3-fontforge](https://fontforge.org/docs/scripting/python.html) (generates the font files),
 - [python3-dotenv](https://pypi.org/project/python-dotenv/) (reads `.env` parameters),
