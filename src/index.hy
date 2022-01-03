@@ -17,35 +17,41 @@ html
 			| Filter: 
 			input .filter #filter type="text"
 			| ⋮ 
-			input type="checkbox" #podcasting20certified
-			label for="podcasting20certified"
-				| Podcasting 2.0
-				i class="pi pi-podcasting20certifiedbadge"
+			span .nowrap
+				input type="checkbox" #podcasting20certified
+				label for="podcasting20certified"
+					| Podcasting 2.0
+					i class="pi pi-podcasting20certifiedbadge"
 			| ⋮ 
-			input type="checkbox" #opensource
-			label for="opensource"
-				| Open-Source
-				i class="pi pi-opensource"
+			span .nowrap
+				input type="checkbox" #opensource
+				label for="opensource"
+					| Open-Source
+					i class="pi pi-opensource"
 			| ⋮ 
-			input type="checkbox" #listener
-			label for="listener"
-				| For listeners
-				i class="pi pi-listener"
+			span .nowrap
+				input type="checkbox" #listener
+				label for="listener"
+					| For listeners
+					i class="pi pi-listener"
+			| ·
+			span .nowrap
+				input type="checkbox" #podcaster
+				label for="podcaster"
+					| For podcasters
+					i class="pi pi-podcaster"
 			| · 
-			input type="checkbox" #podcaster
-			label for="podcaster"
-				| For podcasters
-				i class="pi pi-podcaster"
+			span .nowrap
+				input type="checkbox" #directory
+				label for="directory"
+					| Directories
+					i class="pi pi-directory"				
 			| · 
-			input type="checkbox" #directory
-			label for="directory"
-				| Directories
-				i class="pi pi-directory"				
-			| · 
-			input type="checkbox" #misc
-			label for="misc"
-				| Miscellaneous
-				i class="pi pi-misc"	
+			span .nowrap
+				input type="checkbox" #misc
+				label for="misc"
+					| Miscellaneous
+					i class="pi pi-misc"	
 		div .boxes
 			for glyph in $glyphs:
 				div class="box box-$glyph['glyph_category'] $glyph['glyph_box_attributes']" id="$glyph['glyph_name'].lower()"

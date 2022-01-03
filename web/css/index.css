@@ -38,6 +38,10 @@ a:hover {
   float:  left;
 }
 
+.nowrap {
+  white-space: nowrap;
+}
+
 .boxes {
   display: flex;
   flex-flow: row wrap;
