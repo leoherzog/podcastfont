@@ -90,6 +90,9 @@ font.generate('../web/fonts/PodcastFont.woff')
 print('Generating WOFF2 font file…')
 font.generate('../web/fonts/PodcastFont.woff2')
 
+with open('version.txt', 'w') as version_file:
+	version_file.write(version+"\n"+base_url)
+
 print('Generating ZIP package file…')
 with ZipFile('../web/package/podcastfont.zip', 'w') as zipObj:
    zipObj.write('../OFL.txt','OFL.TXT')	
@@ -98,5 +101,8 @@ with ZipFile('../web/package/podcastfont.zip', 'w') as zipObj:
    zipObj.write('../web/fonts/PodcastFont.ttf','fonts/PodcastFont.ttf')
    zipObj.write('../web/fonts/PodcastFont.woff','fonts/PodcastFont.woff')
    zipObj.write('../web/fonts/PodcastFont.woff2','fonts/PodcastFont.woff2')
+   zipObj.write('version.txt','version.txt') 
+
+os.remove('version.txt')
 
 print('Done.')
