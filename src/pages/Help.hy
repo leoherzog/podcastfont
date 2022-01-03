@@ -27,14 +27,6 @@ html
 			br
 			| For instance:
 			span class="code" | <i class="pi pi-castopodhost"></i>
-		p
-			| If you want to use the Podcast Font on your local computer, just download the  
-			a href="{$base_url}package/podcastfont.zip" 
-				| Podcast Font package
-			| , unzip it and install the Podcast Font (either OTF or TTF) by double-clicking on the file.
-			br
-			| Then simply copy the glyph you need and paste it into your document.
-
 		h2 | Self Hosting
 		p
 			| For privacy, security, reliability and liability issues, we strongly recommend that you host all the CSS and font files on your own website or CDN.
@@ -44,6 +36,14 @@ html
 			|, unzip it on your server / CDN and update the CSS file URL in the <head> section of your pages accordingly.
 		p
 			| You can even build and self-host a mirror of this whole website, but the CSS and font files are enough.
+		h2 | On your personal computer
+		p
+			| If you want to use the Podcast Font on your local computer, just download the  
+			a href="{$base_url}package/podcastfont.zip" 
+				| Podcast Font package
+			| , unzip it and install the Podcast Font (either OTF or TTF) by double-clicking on the file.
+			br
+			| Then simply copy the glyph you need and paste it into your document.
 		h2 | Feedback
 		p
 			| You may open an issue if you want to
