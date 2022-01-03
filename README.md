@@ -5,6 +5,11 @@ It was designed as a 100% static website so that it can be easily cached by CDNs
 
 If you need help *using* the website, please go to [podcastfont.com help page](https://podcastfont.com/Help.html).
 
+## Licenses
+This project is licensed under the [GNU Affero General Public License](https://www.gnu.org/licenses/agpl-3.0.en.html).
+
+The generated font files are licensed under the [SIL Open Font License (OFL) ](https://scripts.sil.org/OFL).
+
 ## Feedback
 
 You may open an issue if you want to [request an Icon](https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Icon%20request:%20icon-name&issue[description]=Please%20provide%20SVG%20file%20and%20all%20useful%20information%20here.) or [report an error](https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Error%20reporting:%20icon-name&issue[description]=Please%20provide%20all%20useful%20information%20here.).
@@ -26,7 +31,7 @@ CONTACT_EMAIL=name@domain-name.tld
 ```
 
 - Create and/or edit `.hy` pages in  the `src/pages/` folder,
-- go to the `src/` folder and run the `build.py` script.
+- go to the `src/` folder and run the `build.py` script,
 
 ```
 src$ ./build.py 
@@ -45,6 +50,8 @@ Compressed 71015 to 45697.
 Generating ZIP package file…
 Done.
 ```
+
+- Upload the content of the `web/` folder to your web server.
 
 ## Requirements
 
