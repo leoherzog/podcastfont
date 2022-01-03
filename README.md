@@ -79,13 +79,16 @@ Example:
 
 | glyph_id | glyph_category | glyph_unicode | glyph_name | glyph_url | glyph_attributes |
 | ------ | ------ | ------ | ------ | ------ | ------ |
-| castopodhost | podcaster | eb06 | Castopod | https://castopod.org/ | podcasting20certifiedbadge,opensource |
+| castopod | podcaster | eb06 | Castopod | https://castopod.org/ | podcasting20certifiedbadge,opensource |
+| podcastindex | directory | eb51 | Podcast Index | https://podcastindex.org/ | podcasting20certifiedbadge,opensource |
+| podnews | directory | eb52 | Podnews | https://podnews.net/ | podcasting20certifiedbadge |
+| podcastaddict | listener | eb39 | Podcast Addict | https://podcastaddict.com/ | podcasting20certifiedbadge |
 
 Note that there are several CSV files in the `character-map/` folder:
 
 - `Alphabet.csv`: defines the usual characters “ABC…”
 - `PodcastFont.csv`: defines the glyphs specific to the Podcast Font,
 - `FontAwesome.csv`: defines the glyphs which already have a Unicode number at FontAwesome.com, so that we use the same Unicode number (but the SVG is different) and we avoid having the same glyph with different codes for different fonts.  
-For Instance the `Apple Podcast` glyph is `f2ce` for both Podcast Font and FontAwesome.
+For Instance the `Apple Podcast` glyph is `f2ce` for both Podcast Font and FontAwesome, so if you switch from one font to the other you may get a slightly different icon but it will always represent the Apple Podcast icon.
 
 
