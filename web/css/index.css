@@ -134,6 +134,14 @@ a:hover {
   padding:  5px;
 }
 
+.pages a {
+    color: #446;
+}
+
+.pages a:hover {
+    color: #f44;
+}
+
 .tooltip {
   position: relative;
   display: inline-block;

@@ -29,7 +29,7 @@ stitcher;podcaster;eb1a;Stitcher;https://www.stitcher.com/;
 transistor;podcaster;eb1b;Transistor;https://transistor.fm/;
 whooshkaa;podcaster;eb1c;Whooshkaa;https://www.whooshkaa.com/;
 chapters;misc;eb1d;Chapters;;
-podcasting20certified;misc;eb1e;Podcasting 2.0 Certified;http://newpodcastapps.com;podcasting20certifiedbadge,opensource
+podcasting20certified;podcaster;eb1e;Podcasting 2.0 Certified;http://newpodcastapps.com;podcasting20certifiedbadge,opensource
 amazonmusic;listener;eb1f;Amazon Music;https://music.amazon.com/;
 antennapod;listener;eb20;AntennaPod;https://antennapod.org/;podcasting20certifiedbadge,opensource
 anytime;listener;eb21;Anytime Player;https://anytimeplayer.app/;podcasting20certifiedbadge,opensource
@@ -76,7 +76,7 @@ listennotes;directory;eb49;Listennotes;https://www.listennotes.com/;
 plink;directory;eb50;Plink;https://plinkhq.com/;podcasting20certifiedbadge
 podcastindex;directory;eb51;Podcast Index;https://podcastindex.org/;podcasting20certifiedbadge,opensource
 podnews;directory;eb52;Podnews;https://podnews.net/;podcasting20certifiedbadge
-podcastfont;podcaster;eb53;Podcastfont;https://podcastfont.com/;
+podcastfont;podcaster;eb53;Podcastfont;https://podcastfont.com/;opensource
 podcastrepublic;listener;eb54;Podcast Republic;https://www.podcastrepublic.net/;podcasting20certifiedbadge
 activitypub;misc;eb55;ActivityPub;https://www.w3.org/TR/activitypub/;
-podcasting20certifiedbadge;misc;eb56;Podcasting 2.0 round badge;https://podcastindex.org/;podcasting20certifiedbadge,opensource
+podcasting20certifiedbadge;podcaster;eb56;Podcasting 2.0 round badge;https://podcastindex.org/;podcasting20certifiedbadge,opensource
