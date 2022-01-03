@@ -38,7 +38,7 @@ font.encoding = 'UnicodeFull'
 font.familyname = 'Podcast Font'
 font.fontname = 'PodcastFont'
 font.fullname = 'Podcast Font'
-font.copyright = '(cc by-sa) Ad Aures - PodcastFont.com'
+font.copyright = 'Copyright (c) 2021, Ad Aures - PodcastFont.com - SIL Open Font License 1.1'
 
 print('Creating folders…')
 os.makedirs('../web/fonts', exist_ok=True)
