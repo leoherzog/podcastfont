@@ -59,3 +59,33 @@ Done.
 - [python3-dotenv](https://pypi.org/project/python-dotenv/) (reads `.env` parameters),
 - [hypertag-lang](http://hypertag.io/) (builds the HTML files),
 - [libsass](https://pypi.org/project/libsass/) (builds the CSS files).
+
+## Adding new glyphs
+
+If you want to add new glyphs on your forked version, you jast have to:
+
+- Create an SVG file and store it in the `src/svg/` folder,
+- Add it to a CSV file inside the `character-map/` folder.  
+The CSV file is `;` separated.  
+Columns are:
+  - `glyph_id`: must be unique, also the name of the SVG file (without `.svg` extension),
+  - `glyph_category`: the category for this glyph, also the sub-folder name for SVG file,
+  - `glyph_unicode`: the Unicode Hex number for this glyph,
+  - `glyph_name`: the long name for this glyph,
+  - `glyph_url`: if there is a website talking about this glyph, put it here,
+  - `glyph_attributes`: attributes for this glyph (',' separated)
+
+Example:
+
+| glyph_id | glyph_category | glyph_unicode | glyph_name | glyph_url | glyph_attributes |
+| ------ | ------ | ------ | ------ | ------ | ------ |
+| castopodhost | podcaster | eb06 | Castopod | https://castopod.org/ | podcasting20certifiedbadge,opensource |
+
+Note that there are several CSV files in the `character-map/` folder:
+
+- `Alphabet.csv`: defines the usual characters “ABC…”
+- `PodcastFont.csv`: defines the glyphs specific to the Podcast Font,
+- `FontAwesome.csv`: defines the glyphs which already have a Unicode number at FontAwesome.com, so that we use the same Unicode number (but the SVG is different) and we avoid having the same glyph with different codes for different fonts.  
+For Instance the `Apple Podcast` glyph is `f2ce` for both Podcast Font and FontAwesome.
+
+
