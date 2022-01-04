@@ -19,7 +19,7 @@ html
 			a href="package/podcastfont.zip"
 				i .pi .pi-download
 				| Download				
-		form
+		form action="javascript:void(0);"
 			i .pi .pi-search
 			| Filter: 
 			input .filter #filter type="text"
@@ -61,7 +61,7 @@ html
 					i class="pi pi-misc"	
 		div .boxes
 			for glyph in $glyphs:
-				div class="box box-$glyph['glyph_category'] $glyph['glyph_box_attributes']" id="$glyph['glyph_name'].lower()"
+				div class="box box-$glyph['glyph_category'] $glyph['glyph_box_attributes']" id="$glyph["glyph_unicode"].lower() $glyph['glyph_name'].lower()"
 					span .glyph-unicode .tooltip data-type="clipboard" data-clipboard-content="$glyph["glyph_unicode"]"
 						| $glyph["glyph_unicode"]
 						span .tooltiptext | Click to copy $glyph["glyph_name"] Unicode value
