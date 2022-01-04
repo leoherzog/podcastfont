@@ -30,6 +30,10 @@ a:hover {
   color: #f44;
 }
 
+label:hover {
+  color: #f44;
+}
+
 .right{
   float: right;
 }
