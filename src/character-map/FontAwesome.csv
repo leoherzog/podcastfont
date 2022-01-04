@@ -61,8 +61,13 @@ podcaster;misc;f680;Podcaster;;
 appstore;misc;f36f;App Store;;
 directory;misc;f2b9;Directory;;
 misc;misc;e02f;Miscellaneous;;
-tag-funding;misc;f0d6;[Tag] Funding;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-funding;misc;f4c0;[Tag] Funding;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
 tag-indexsearch;misc;f00e;[Tag] Index Search;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
 tag-locked;misc;f023;[Tag] Locked;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
 tag-soundbite;misc;f12e;[Tag] Soundbite;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-value4value;misc;f0d6;[Tag] Value for Value;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-person;misc;f500;[Tag] Person;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-alternateenclosure;misc;f65e;[Tag] Alternate enclosure;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-season;misc;f0ca;[Tag] Season;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-chapters;misc;f0cb;[Tag] Chapters;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
 help;misc;f1cd;Help;;

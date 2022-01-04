@@ -28,7 +28,6 @@ spreaker;podcaster;eb19;Spreaker;https://www.spreaker.com/;
 stitcher;podcaster;eb1a;Stitcher;https://www.stitcher.com/;
 transistor;podcaster;eb1b;Transistor;https://transistor.fm/;
 whooshkaa;podcaster;eb1c;Whooshkaa;https://www.whooshkaa.com/;
-tag-chapters;misc;eb1d;[Tag] Chapters;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
 podcasting20certified;podcaster;eb1e;Podcasting 2.0 Certified;http://newpodcastapps.com;podcasting20certifiedbadge,opensource
 amazonmusic;listener;eb1f;Amazon Music;https://music.amazon.com/;
 antennapod;listener;eb20;AntennaPod;https://antennapod.org/;podcasting20certifiedbadge,opensource
@@ -80,7 +79,4 @@ podcastfont;podcaster;eb53;Podcastfont;https://podcastfont.com/;opensource
 podcastrepublic;listener;eb54;Podcast Republic;https://www.podcastrepublic.net/;podcasting20certifiedbadge
 activitypub;misc;eb55;ActivityPub;https://www.w3.org/TR/activitypub/;
 podcasting20certifiedbadge;podcaster;eb56;Podcasting 2.0 round badge;https://podcastindex.org/;podcasting20certifiedbadge,opensource
-tag-person;misc;eb57;[Tag] Person;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-value4value;misc;eb58;[Tag] Value for Value;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-alternateenclosure;misc;eb59;[Tag] Alternate enclosure;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-season;misc;eb5a;[Tag] Season;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+badgeek;podcaster;eb57;BadGeek;https://www.badgeek.fr/;
