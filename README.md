@@ -10,6 +10,8 @@ This project is licensed under the [GNU Affero General Public License](https://w
 
 The generated font files are licensed under the [SIL Open Font License (OFL) ](https://scripts.sil.org/OFL).
 
+Some glyphs are from [SVGrepo](https://www.svgrepo.com/) and are licenced under  [(CC0)](https://creativecommons.org/publicdomain/zero/1.0/deed.fr). 
+
 ## Feedback
 
 You may open an issue if you want to [request an Icon](https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Icon%20request:%20icon-name&issue[description]=Please%20provide%20SVG%20file%20and%20all%20useful%20information%20here.) or [report an error](https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Error%20reporting:%20icon-name&issue[description]=Please%20provide%20all%20useful%20information%20here.).
