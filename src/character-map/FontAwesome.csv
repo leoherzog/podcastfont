@@ -1,4 +1,5 @@
 applepodcast;listener;f2ce;Apple Podcast;https://www.apple.com/apple-podcasts/;
+appstore;misc;f36f;App Store;;
 backward;misc;f04a;Backward;;
 bitcoin;misc;f379;Bitcoin;https://bitcoin.org/;opensource
 bookmark;misc;f02e;Bookmark;;
@@ -13,22 +14,24 @@ ccremix;misc;f4ee;Creative Commons · Remix;https://creativecommons.org/use-remi
 ccsa;misc;f4ef;Creative Commons · Share Alike;https://creativecommons.org/licenses/by-sa/4.0/;opensource
 ccshare;misc;f4f2;Creative Commons · Share;https://creativecommons.org/share-your-work/;opensource
 cczero;misc;f4f3;Creative Commons · No Copyright;https://creativecommons.org/publicdomain/zero/1.0/;opensource
-tag-transcript;misc;f20a;[Tag] Transcript;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
 code;misc;f121;Code;;
 coin;misc;f85c;Coin;;
 coins;misc;f51e;Coins;;
 comment;misc;f075;Comment;;
 desktop;misc;f108;Device · Desktop;;
+directory;misc;f2b9;Directory;;
 disc;misc;f51f;Compact Disc;;
 download;misc;f019;Download;;
 external-link;misc;f35d;External link;;
 forward;misc;f04e;Forward;;
 headphones;misc;f025;Headphones;;
 heart;misc;f004;Heart;;
+help;misc;f1cd;Help;;
 laptop;misc;f109;Device · Laptop;;
 link;misc;f0c1;Link;;
-tag-location;misc;f041;[Tag] Location;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+listener;misc;f82d;Listener;;
 microphone;misc;f130;Microphone;;
+misc;misc;e02f;Miscellaneous;;
 mobile;misc;f10b;Device · Mobile;;
 mp3player;misc;f8ce;MP3 Player;;
 musicnote;misc;f001;Music Note;;
@@ -37,7 +40,9 @@ next;misc;f050;Next;;
 opensource;misc;f41a;Open Source;https://opensource.org/;
 pause;misc;f04c;Pause;;
 play;misc;f04b;Play;;
+podcaster;misc;f680;Podcaster;;
 previous;misc;f049;Previous;;
+qrcode;misc;f029;QR code;;
 radio;misc;f8d7;Radio;;
 repeat;misc;f363;Repeat;;
 rss;misc;f09e;RSS;https://www.rssboard.org/rss-specification;opensource
@@ -50,24 +55,26 @@ spotify;listener;f1bc;Spotify;https://www.spotify.com/;
 star;misc;f005;Star;;
 stop;misc;f04d;Stop;;
 tablet;misc;f10a;Device · Tablet;;
+tag-alternateenclosure;misc;f65e;[Tag] Alternate enclosure;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-chapters;misc;f0cb;[Tag] Chapters;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-funding;misc;f4c0;[Tag] Funding;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-guid;misc;f2c2;[Tag] GUID;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-images;misc;f302;[Tag] Images;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-indexsearch;misc;f00e;[Tag] Index Search;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-location;misc;f041;[Tag] Location;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-locked;misc;f023;[Tag] Locked;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-medium;misc;f87c;[Tag] Medium;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-person;misc;f500;[Tag] Person;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-recommendations;misc;f7f5;[Tag] Recommendations;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-season;misc;f0ca;[Tag] Season;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-socialinteract;misc;f086;[Tag] Social interact;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-soundbite;misc;f12e;[Tag] Soundbite;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-trailer;misc;f008;[Tag] Trailer;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-transcript;misc;f20a;[Tag] Transcript;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-value4value;misc;f0d6;[Tag] Value for Value;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
 tape;misc;f8ab;Cassette Tape;;
 upload;misc;f093;Upload;;
 user;misc;f007;User;;
 volumedown;misc;f027;Volume Down;;
 volumemute;misc;f6a9;Volume Mute;;
 volumeup;misc;f028;Volume Up;;
-listener;misc;f82d;Listener;;
-podcaster;misc;f680;Podcaster;;
-appstore;misc;f36f;App Store;;
-directory;misc;f2b9;Directory;;
-misc;misc;e02f;Miscellaneous;;
-tag-funding;misc;f4c0;[Tag] Funding;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-indexsearch;misc;f00e;[Tag] Index Search;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-locked;misc;f023;[Tag] Locked;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-soundbite;misc;f12e;[Tag] Soundbite;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-value4value;misc;f0d6;[Tag] Value for Value;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-person;misc;f500;[Tag] Person;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-alternateenclosure;misc;f65e;[Tag] Alternate enclosure;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-season;misc;f0ca;[Tag] Season;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-chapters;misc;f0cb;[Tag] Chapters;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-help;misc;f1cd;Help;;
