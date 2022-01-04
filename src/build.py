@@ -27,8 +27,8 @@ load_dotenv()
 base_url = os.getenv('BASE_URL')
 if base_url is None:
 	base_url = ""
-
 contact_email = os.getenv('CONTACT_EMAIL')
+font_copyright = os.getenv('FONT_COPYRIGHT')
 
 version = "Version " + datetime.now(timezone.utc).strftime("%Y%m%d%H%M%S")
 
@@ -38,7 +38,8 @@ font.encoding = 'UnicodeFull'
 font.familyname = 'Podcast Font'
 font.fontname = 'PodcastFont'
 font.fullname = 'Podcast Font'
-font.copyright = 'Copyright (c) 2021, Ad Aures - PodcastFont.com - SIL Open Font License 1.1'
+if font_copyright is not None:
+	font.copyright = font_copyright
 
 print('Creating folders…')
 os.makedirs('../web/fonts', exist_ok=True)

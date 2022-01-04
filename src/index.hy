@@ -11,7 +11,14 @@ html
 		title | The Podcast Font
 	body
 		h1 | The Podcast Font 
-		a .help href="Help.html" | Help!
+		div .help
+			a href="Help.html"
+				i .pi .pi-help
+				| Help!
+			| ·
+			a href="package/podcastfont.zip"
+				i .pi .pi-download
+				| Download				
 		form
 			i .pi .pi-search
 			| Filter: 

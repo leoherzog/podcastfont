@@ -28,8 +28,9 @@ $ git clone https://code.podlibre.org/podlibre/podcastfont.git
 
 ```
 # Edit this file, save it to .env, then rebuild the website.
-BASE_URL=https://domain-name.tld/
-CONTACT_EMAIL=name@domain-name.tld
+BASE_URL = "https://domain-name.tld/"
+CONTACT_EMAIL = "name@domain-name.tld"
+FONT_COPYRIGHT = "Copyright (c) 2021 - SIL Open Font License 1.1"
 ```
 
 - If you want to, create and/or edit `.hy` pages in  the `src/pages/` folder using [hypertag](http://hypertag.io/),
