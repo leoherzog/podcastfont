@@ -57,7 +57,7 @@ window.addEventListener("load", function(event){
   }
   var filters=location.hash.split('&');
   if(filters[0].startsWith('#')){
-    document.querySelector('#filter').value = filters[0].substring(1);
+    document.querySelector('#filter').value = unescape(filters[0].substring(1));
   }
   document.querySelector('#podcasting20certified').checked = (filters.includes('podcasting20certified'));
   document.querySelector('#opensource').checked = (filters.includes('opensource'));
