@@ -71,6 +71,8 @@ html
 						i class="pi pi-$glyph["glyph_category"] icon-category"	
 					h2 .glyph-name
 						| $glyph['glyph_name']
+						i .pi .pi-link .tooltip data-type="clipboard" data-clipboard-content="{$base_url}#$glyph["glyph_unicode"]"
+							span .tooltiptext | Click to copy link to $glyph["glyph_name"]
 					span .glyph-code .tooltip data-type="clipboard" data-clipboard-content='<i class="pi pi-{$glyph['glyph_id']}"></i>'
 						| <i class="pi pi-$glyph['glyph_id']"></i>
 						span .tooltiptext | Click to copy $glyph["glyph_name"] HTML code
