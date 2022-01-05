@@ -36,7 +36,7 @@ html lang="en"
 				i .pi .pi-download
 				| Download				
 		form action="javascript:void(0);"
-			i .pi .pi-search
+			i .pi .pi-filter
 			| Filter: 
 			input .filter #filter type="text"
 			| ⋮ 

@@ -1,10 +1,12 @@
 add;misc;f0fe;Add;;
+alarm;misc;f34e;Alarm;;
 applepodcast;listener;f2ce;Apple Podcast;https://www.apple.com/apple-podcasts/;
 appstore;misc;f36f;App Store;;
 backward;misc;f04a;Backward;;
 bitcoin;misc;f379;Bitcoin;https://bitcoin.org/;opensource
 bookmark;misc;f02e;Bookmark;;
 bravo;misc;e05d;Bravo;;
+broadcast;misc;f519;Broadcast;;
 cc;misc;f25e;Creative Commons;https://creativecommons.org/;opensource
 ccby;misc;f4e7;Creative Commons · Attribution;https://creativecommons.org/licenses/by/4.0/;opensource
 ccnc-eu;misc;f4e9;Creative Commons · Non Commercial (€);https://creativecommons.org/licenses/by-nc/4.0/;opensource
@@ -17,21 +19,28 @@ ccsa;misc;f4ef;Creative Commons · Share Alike;https://creativecommons.org/licen
 ccshare;misc;f4f2;Creative Commons · Share;https://creativecommons.org/share-your-work/;opensource
 cczero;misc;f4f3;Creative Commons · No Copyright;https://creativecommons.org/publicdomain/zero/1.0/;opensource
 celebrate;misc;f79f;Celebrate;;
+chart;misc;f201;Chart;;
 code;misc;f121;Code;;
 coin;misc;f85c;Coin;;
 coins;misc;f51e;Coins;;
 comment;misc;f075;Comment;;
+cut;misc;f0c4;Cut;;
 delete;misc;f1f8;Delete;;
 desktop;misc;f108;Device · Desktop;;
 directory;misc;f2b9;Directory;;
 disc;misc;f51f;Compact Disc;;
 download;misc;f019;Download;;
 external-link;misc;f35d;External link;;
+file;misc;f15b;File;;
+filter;misc;f0b0;filter;;
 forward;misc;f04e;Forward;;
 headphones;misc;f025;Headphones;;
 heart;misc;f004;Heart;;
 help;misc;f1cd;Help;;
+history;misc;f1da;History;;
+language;misc;f1ab;Language;;
 laptop;misc;f109;Device · Laptop;;
+lightbulb;misc;f0eb;Light bulb;;
 link;misc;f0c1;Link;;
 listener;misc;f82d;Listener;;
 microphone;misc;f130;Microphone;;
@@ -49,18 +58,22 @@ podcaster;misc;f680;Podcaster;;
 previous;misc;f049;Previous;;
 qrcode;misc;f029;QR code;;
 radio;misc;f8d7;Radio;;
+refresh;misc;f021;Refresh;;
 remove;misc;f146;Remove;;
 repeat1;misc;f365;Repeat 1;;
 repeat;misc;f363;Repeat;;
 rocket;misc;f135;Rocket;;
 rss;misc;f09e;RSS;https://www.rssboard.org/rss-specification;opensource
 search;misc;f002;Search;;
+send;misc;f1d8;Send;;
 server;misc;f233;Server;;
 settings;misc;f1de;Settings;;
 share;misc;f064;Share;;
+shuffle;misc;f074;Shuffle;;
 signin;misc;f2f6;Sign in;;
 signout;misc;f08b;Sign out;;
 soundcloud;listener;f1be;Soundcloud;https://soundcloud.com/;
+speed;misc;f0e4;Speed;;
 spotify;listener;f1bc;Spotify;https://www.spotify.com/;
 star;misc;f005;Star;;
 stop;misc;f04d;Stop;;
@@ -84,8 +97,10 @@ tag-transcript;misc;f20a;[Tag] Transcript;https://github.com/Podcastindex-org/po
 tag-value4value;misc;f0d6;[Tag] Value for Value;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
 tape;misc;f8ab;Cassette Tape;;
 thumbsup;misc;f164;Thumbs up;;
+tv;misc;f26c;TV;;
 upload;misc;f093;Upload;;
 user;misc;f007;User;;
 volumedown;misc;f027;Volume Down;;
 volumemute;misc;f6a9;Volume Mute;;
 volumeup;misc;f028;Volume Up;;
+world;misc;f0ac;World;;
