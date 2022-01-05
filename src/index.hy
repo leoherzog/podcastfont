@@ -1,14 +1,30 @@
 context $version, $base_url, $contact_email, $pages, $glyphs
-
-html
+doctype
+html lang="en"
 	head
 		meta charset="utf-8"
-		meta name="description" content="Podcast Font provides all the icons you need for your podcast!"
 		link rel="icon" href="favicon.ico"
 		link rel="stylesheet" href="{$base_url}css/PodcastFont.css"
 		link rel="stylesheet" href="{$base_url}css/index.css"
 		script type="module" src="{$base_url}js/podcastfont.js"
 		title | The Podcast Font
+		meta id="meta-application-name" name="application-name" content="The Podcast Font"
+		meta id="meta-description" name="description" content="The Podcast Font provides all the icons you need for your podcast website, your podcast app or your podcast documents."
+		meta id="meta-keywords" name="keywords" content="podcast icons, icons, vector icons, svg icons, free icons, icon font, webfont, desktop icons, svg"
+		meta id="meta-item-name" itemprop="name" content="The Podcast Font"
+		meta id="meta-item-description" itemprop="description" content="The Podcast Font provides all the icons you need for your podcast website, your podcast app or your podcast documents."
+		meta id="meta-item-image" itemprop="image" content="{$base_url}podcastfont-cover.webp"
+		meta id="twt-card" name="twitter:card" content="summary"
+		meta id="twt-site" name="twitter:site" content="@podcastfont"
+		meta id="twt-title" name="twitter:title" content="The Podcast Font"
+		meta id="twt-description" name="twitter:description" content="The Podcast Font provides all the icons you need for your podcast website, your podcast app or your podcast documents."
+		meta id="twt-creator" name="twitter:creator" content="@podcastfont"
+		meta id="twt-image" name="twitter:image" content="{$base_url}podcastfont-cover.webp"
+		meta id="og-title" property="og:title" content="The Podcast Font"
+		meta id="og-type" property="og:type" content="website"
+		meta id="og-url" property="og:url" content="{$base_url}"
+		meta id="og-image" property="og:image" content="{$base_url}podcastfont-cover.webp"
+		meta id="og-description" property="og:description" content="The Podcast Font provides all the icons you need for your podcast website, your podcast app or your podcast documents."
 	body
 		h1 | The Podcast Font 
 		div .help

@@ -1,13 +1,14 @@
 context $version, $base_url, $contact_email, $pages
-
-html
+doctype
+html lang="en"
 	head
 		meta charset="utf-8"
-		meta name="description" content="Podcast Font provides all the icons you need for your podcast!"
 		link rel="icon" href="favicon.ico"
 		link rel="stylesheet" href="{$base_url}css/PodcastFont.css"
 		link rel="stylesheet" href="{$base_url}css/index.css"
 		title | Legal Notice
+		meta id="meta-application-name" name="application-name" content="The Podcast Font"
+		meta id="meta-description" name="description" content="The Podcast Font provides all the icons you need for your podcast website, your podcast app or your podcast documents."
 	body
 		h1 | Legal Notice
 

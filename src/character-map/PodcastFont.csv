@@ -40,7 +40,7 @@ castcoverage;listener;eb26;CastCoverage;http://castcoverage.com/;podcasting20cer
 castro;listener;eb27;Castro;https://castro.fm/;
 curiocaster;listener;eb28;Curiocaster;https://curiocaster.com/;podcasting20certifiedbadge
 deezer;listener;eb29;Deezer;https://www.deezer.com/;
-escapepod;listener;eb2a;Escapepod;https://escapepod.org/;podcasting20certifiedbadge,opensource
+escapepod;listener;eb2a;Escapepod;https://github.com/y20k/escapepod;podcasting20certifiedbadge,opensource
 fountain;listener;eb2b;Fountain;https://www.fountain.fm/;podcasting20certifiedbadge
 gnomepodcasts;listener;eb2c;Gnome Podcasts;https://gitlab.gnome.org/World/podcasts;opensource
 googlepodcasts;listener;eb2d;Google Podcasts;https://podcasts.google.com/;
@@ -54,7 +54,7 @@ mediavault;listener;eb34;mediavault;https://github.com/walkero-gr/mediavault;pod
 overcast;listener;eb35;Overcast;https://overcast.fm/;
 playapod;listener;eb36;Playapod;https://playapod.com/;podcasting20certifiedbadge
 playerfm;listener;eb37;Player FM;https://player.fm/;
-pocketcasts;listener;eb38;Pocketcasts;https://www.pocketcasts.com/;
+pocketcasts;listener;eb38;Pocket Casts;https://www.pocketcasts.com/;
 podcastaddict;listener;eb39;Podcast Addict;https://podcastaddict.com/;podcasting20certifiedbadge
 podcastchapters;listener;eb3a;Podcast Chapters;https://chaptersapp.com/;podcasting20certifiedbadge
 podcastguru;listener;eb3b;Podcastguru;https://podcastguru.io/;podcasting20certifiedbadge
