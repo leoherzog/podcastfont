@@ -7,6 +7,7 @@ bitcoin;misc;f379;Bitcoin;https://bitcoin.org/;opensource
 bookmark;misc;f02e;Bookmark;;
 bravo;misc;e05d;Bravo;;
 broadcast;misc;f519;Broadcast;;
+buffering;misc;f110;Buffering;;
 cc;misc;f25e;Creative Commons;https://creativecommons.org/;opensource
 ccby;misc;f4e7;Creative Commons · Attribution;https://creativecommons.org/licenses/by/4.0/;opensource
 ccnc-eu;misc;f4e9;Creative Commons · Non Commercial (€);https://creativecommons.org/licenses/by-nc/4.0/;opensource
@@ -31,6 +32,8 @@ directory;misc;f2b9;Directory;;
 disc;misc;f51f;Compact Disc;;
 download;misc;f019;Download;;
 external-link;misc;f35d;External link;;
+fastbackward;misc;f049;Fast backward;;
+fastforward;misc;f050;Fast forward;;
 file;misc;f15b;File;;
 filter;misc;f0b0;filter;;
 forward;misc;f04e;Forward;;
@@ -49,13 +52,13 @@ mobile;misc;f10b;Device · Mobile;;
 mp3player;misc;f8ce;MP3 Player;;
 musicnote;misc;f001;Music Note;;
 mutedmicrophone;misc;f131;Muted Microphone;;
-next;misc;f050;Next;;
+next;misc;f051;Next;;
 opensource;misc;f41a;Open Source;https://opensource.org/;
 pause;misc;f04c;Pause;;
 play;misc;f04b;Play;;
 playlist;misc;f8c9;Playlist;;
 podcaster;misc;f680;Podcaster;;
-previous;misc;f049;Previous;;
+previous;misc;f048;Previous;;
 qrcode;misc;f029;QR code;;
 radio;misc;f8d7;Radio;;
 refresh;misc;f021;Refresh;;
@@ -72,6 +75,8 @@ share;misc;f064;Share;;
 shuffle;misc;f074;Shuffle;;
 signin;misc;f2f6;Sign in;;
 signout;misc;f08b;Sign out;;
+skipback;misc;f0e2;Skip back 30s;;
+skipforward;misc;f01e;Skip forward;;
 soundcloud;listener;f1be;Soundcloud;https://soundcloud.com/;
 speed;misc;f0e4;Speed;;
 spotify;listener;f1bc;Spotify;https://www.spotify.com/;
@@ -84,6 +89,7 @@ tag-funding;misc;f4c0;[Tag] Funding;https://github.com/Podcastindex-org/podcast-
 tag-guid;misc;f2c2;[Tag] GUID;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
 tag-images;misc;f302;[Tag] Images;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
 tag-indexsearch;misc;f00e;[Tag] Index Search;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-liveitem;misc;f758;[Tag] Live item;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
 tag-location;misc;f041;[Tag] Location;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
 tag-locked;misc;f023;[Tag] Locked;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
 tag-medium;misc;f87c;[Tag] Medium;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge

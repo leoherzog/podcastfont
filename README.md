@@ -61,7 +61,8 @@ Done.
 - [python3-fontforge](https://fontforge.org/docs/scripting/python.html) (generates the font files),
 - [python3-dotenv](https://pypi.org/project/python-dotenv/) (reads `.env` parameters),
 - [hypertag-lang](http://hypertag.io/) (builds the HTML files),
-- [libsass](https://pypi.org/project/libsass/) (builds the CSS files).
+- [libsass](https://pypi.org/project/libsass/) (builds the CSS files),
+- [jsmin](https://pypi.org/project/jsmin/) (minifies JS).
 
 ## Adding new glyphs
 
@@ -69,8 +70,8 @@ If you want to add new glyphs, you just have to:
 
 - Create an SVG file and store it in the `src/svg/` folder,
 - Add it to a CSV file inside the `character-map/` folder.  
-The CSV file is `;` separated.  
-Columns are:
+  The CSV file is `;` separated.  
+  Columns are:
   - `glyph_id`: must be unique, also the name of the SVG file (without `.svg` extension),
   - `glyph_category`: the category for this glyph, also the sub-folder name of the SVG file,
   - `glyph_unicode`: the Unicode hexadecimal number for this glyph,
@@ -93,5 +94,4 @@ Note that there are several CSV files in the `character-map/` folder:
 - `PodcastFont.csv`: defines the glyphs specific to the Podcast Font,
 - `FontAwesome.csv`: defines the glyphs which already have a Unicode number at FontAwesome.com, so that we use the same Unicode number (but the SVG is different) and we avoid having the same glyph with different codes for different fonts.  
 For Instance the `Apple Podcast` glyph is `f2ce` for both Podcast Font and FontAwesome, so if you switch from one font to the other you may get a slightly different icon but it will always display the Apple Podcast icon.
-
 

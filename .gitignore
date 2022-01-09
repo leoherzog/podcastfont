@@ -1,22 +1,18 @@
 # Ignore .env file
 .env
 
-# Ignore all generated HTML pages
-web/*.html
-
 # Ignore all custom pages, do not ignore the help page
 src/pages/*.hy
 !src/pages/Help.hy
 
-# Ignore all generated CSS files, do not ignore index.css
-web/css/*.css
-!web/css/index.css
-
-# Ignore all generated font files
-web/fonts
+# Ignore all generated HTML pages
+web/*.html
 
 # Ignore all copied SVG files
 web/svg
+
+# Ignore all released files
+web/releases
 
 # Ignore all ZIP package file
 web/package

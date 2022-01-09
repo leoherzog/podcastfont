@@ -1,11 +1,11 @@
-context $version, $base_url, $contact_email, $pages
+context $version, $integrity, $base_url, $contact_email, $pages
 doctype
 html lang="en"
 	head
 		meta charset="utf-8"
 		link rel="icon" href="favicon.ico"
-		link rel="stylesheet" href="{$base_url}css/PodcastFont.css"
-		link rel="stylesheet" href="{$base_url}css/index.css"
+		link rel="stylesheet" href="{$base_url}releases/{$version}/css/PodcastFont.css" integrity="{$integrity}" crossorigin="anonymous"
+		link rel="stylesheet" href="{$base_url}index.css"
 		title | Help
 		meta id="meta-application-name" name="application-name" content="The Podcast Font"
 		meta id="meta-description" name="description" content="The Podcast Font provides all the icons you need for your podcast website, your podcast app or your podcast documents."
@@ -16,12 +16,12 @@ html lang="en"
 		h2 | Quick Start
 		p
 			| If you want to use the Podcast Font on your website, just add the following HTML code in the <head> section of your pages:
-			span .code | <link rel="stylesheet" href="{$base_url}css/PodcastFont.css" />
+			span .code | <link rel="stylesheet" href="{$base_url}releases/$version/css/PodcastFont.css" integrity="$integrity" crossorigin="anonymous" />
 			| Or you can import it in your own CSS:
 			span .code
 				| <style>
 				br
-				|   @import url('{$base_url}css/PodcastFont.css');
+				|   @import url('{$base_url}releases/{$version}/css/PodcastFont.css');
 				br
 				| </style>
 			| Then copy the code of the icon you want to insert and past it into your HTML code.
@@ -45,6 +45,12 @@ html lang="en"
 			| , unzip it and install the Podcast Font (either OTF or TTF) by double-clicking on the file.
 			br
 			| Then simply copy the glyph you need and paste it into your document.
+		h2 | More info
+		p
+			| You will find more information at
+			a href="https://podlibre.org/the-podcast-font/"
+				| podlibre.org
+			| .
 		h2 | Feedback
 		p
 			| You may open an issue if you want to
@@ -54,15 +60,13 @@ html lang="en"
 			a href="https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Error reporting: icon-name&issue[description]=Please provide all useful information here." target="_blank"
 				| report an error
 			| .
-
 		h2 | Source Code
 		p
 			| All source code used to generate this website is available for download.
 			br
 			| For more informations please go to 
-			a href="https://code.podlibre.org/podlibre/podcastfont" | PodcastFont GIT repository
+			a href="https://code.podlibre.org/podlibre/podcastfont" | The Podcast Font GIT repository
 			| .
-
 		div .footer
 			a href="/" | Home
 			for page in $pages:
@@ -76,4 +80,4 @@ html lang="en"
 				a href="mailto:$contact_email"
 					| Contact us								
 			span .right
-				| $version
+				| Version $version

@@ -1,12 +1,12 @@
-context $version, $base_url, $contact_email, $pages, $glyphs
+context $version, $integrity, $base_url, $contact_email, $pages, $glyphs
 doctype
 html lang="en"
 	head
 		meta charset="utf-8"
 		link rel="icon" href="favicon.ico"
-		link rel="stylesheet" href="{$base_url}css/PodcastFont.css"
-		link rel="stylesheet" href="{$base_url}css/index.css"
-		script type="module" src="{$base_url}js/podcastfont.js"
+		link rel="stylesheet" href="{$base_url}releases/{$version}/css/PodcastFont.css" integrity="{$integrity}" crossorigin="anonymous"
+		link rel="stylesheet" href="{$base_url}index.css"
+		script type="module" src="{$base_url}podcastfont.js"
 		title | The Podcast Font
 		meta id="meta-application-name" name="application-name" content="The Podcast Font"
 		meta id="meta-description" name="description" content="The Podcast Font provides all the icons you need for your podcast website, your podcast app or your podcast documents."
@@ -118,4 +118,4 @@ html lang="en"
 				a href="mailto:$contact_email"
 					| Contact us								
 			span .right
-				| $version
+				| Version $version
