@@ -25,6 +25,7 @@ def read_csv_file(csv_filename, font, glyphs=None):
 
 
 version = datetime.now(timezone.utc).strftime("%Y%m%d%H%M")
+release_folder = '../web/releases/'+version
 
 print('Building PodcastFont Version '+version+'…')
 
@@ -51,8 +52,8 @@ os.makedirs('../web/svg/listener', exist_ok=True)
 os.makedirs('../web/svg/misc', exist_ok=True)
 os.makedirs('../web/svg/podcaster', exist_ok=True)
 os.makedirs('../web/package', exist_ok=True)
-os.makedirs('../web/releases/'+version+'/fonts', exist_ok=True)
-os.makedirs('../web/releases/'+version+'/css', exist_ok=True)
+os.makedirs(release_folder+'/fonts', exist_ok=True)
+os.makedirs(release_folder+'/css', exist_ok=True)
 
 print('Reading CSV files…')
 read_csv_file('character-map/Alphabet.csv', font)
@@ -65,7 +66,7 @@ icons_map_filename='IconsMap.scss'
 with open(icons_map_filename, 'w') as icons_map_file:
 	icons_map_file.write(icons_map)
 css_string=sass.compile(filename='PodcastFont.scss', output_style='compressed')
-with open('../web/releases/'+version+'/css/PodcastFont.css', 'w') as css_file:
+with open(release_folder+'/css/PodcastFont.css', 'w') as css_file:
 	css_file.write(css_string)
 os.remove(icons_map_filename)
 
@@ -97,13 +98,13 @@ for page in pages:
 			html_file.write(hypertag.HyperHTML().render(page_file.read(), version=version, integrity=integrity, base_url=base_url, contact_email=contact_email, pages=pages))
 
 print('Generating OTF font file…')
-font.generate('../web/releases/'+version+'/fonts/PodcastFont.otf')
+font.generate(release_folder+'/fonts/PodcastFont.otf')
 print('Generating TTF font file…')
-font.generate('../web/releases/'+version+'/fonts/PodcastFont.ttf')
+font.generate(release_folder+'/fonts/PodcastFont.ttf')
 print('Generating WOFF font file…')
-font.generate('../web/releases/'+version+'/fonts/PodcastFont.woff')
+font.generate(release_folder+'/fonts/PodcastFont.woff')
 print('Generating WOFF2 font file…')
-font.generate('../web/releases/'+version+'/fonts/PodcastFont.woff2')
+font.generate(release_folder+'/fonts/PodcastFont.woff2')
 
 with open('version.txt', 'w') as version_file:
 	version_file.write(version+"\n"+base_url)
@@ -111,11 +112,11 @@ with open('version.txt', 'w') as version_file:
 print('Generating ZIP package file…')
 with ZipFile('../web/package/podcastfont.zip', 'w') as zipObj:
    zipObj.write('../OFL.txt','OFL.TXT')	
-   zipObj.write('../web/releases/'+version+'/css/PodcastFont.css','css/PodcastFont.css')
-   zipObj.write('../web/releases/'+version+'/fonts/PodcastFont.otf','fonts/PodcastFont.otf')
-   zipObj.write('../web/releases/'+version+'/fonts/PodcastFont.ttf','fonts/PodcastFont.ttf')
-   zipObj.write('../web/releases/'+version+'/fonts/PodcastFont.woff','fonts/PodcastFont.woff')
-   zipObj.write('../web/releases/'+version+'/fonts/PodcastFont.woff2','fonts/PodcastFont.woff2')
+   zipObj.write(release_folder+'/css/PodcastFont.css','css/PodcastFont.css')
+   zipObj.write(release_folder+'/fonts/PodcastFont.otf','fonts/PodcastFont.otf')
+   zipObj.write(release_folder+'/fonts/PodcastFont.ttf','fonts/PodcastFont.ttf')
+   zipObj.write(release_folder+'/fonts/PodcastFont.woff','fonts/PodcastFont.woff')
+   zipObj.write(release_folder+'/fonts/PodcastFont.woff2','fonts/PodcastFont.woff2')
    zipObj.write('version.txt','version.txt') 
 
 os.remove('version.txt')
