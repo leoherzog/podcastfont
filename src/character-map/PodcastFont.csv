@@ -17,7 +17,6 @@ podcastpage;podcaster;eb0f;Podcastpage;https://podcastpage.io/;podcasting20certi
 podchaser;podcaster;eb10;Podchaser;https://www.podchaser.com/;
 podcloud;podcaster;eb11;podCloud;https://podcloud.fr/;
 podigee;podcaster;eb12;podigee;https://www.podigee.com/;
-podlink;podcaster;e077;Podlink;https://pod.link/;
 podlove;podcaster;eb13;Podlove;https://podlove.org/;podcasting20certifiedbadge,opensource
 podserve;podcaster;eb14;Podserve;https://www.podserve.fm/;podcasting20certifiedbadge
 powerpress;podcaster;eb15;Powerpress;https://blubrry.com/services/powerpress-plugin/;podcasting20certifiedbadge
@@ -39,7 +38,7 @@ castbox;listener;eb25;Castbox;https://castbox.fm/;
 castcoverage;listener;eb26;CastCoverage;http://castcoverage.com/;podcasting20certifiedbadge
 castro;listener;eb27;Castro;https://castro.fm/;
 curiocaster;listener;eb28;Curiocaster;https://curiocaster.com/;podcasting20certifiedbadge
-deezer;listener;eb29;Deezer;https://www.deezer.com/;
+podlink;podcaster;eb29;Podlink;https://pod.link/;
 escapepod;listener;eb2a;Escapepod;https://github.com/y20k/escapepod;podcasting20certifiedbadge,opensource
 fountain;listener;eb2b;Fountain;https://www.fountain.fm/;podcasting20certifiedbadge
 gnomepodcasts;listener;eb2c;Gnome Podcasts;https://gitlab.gnome.org/World/podcasts;opensource
