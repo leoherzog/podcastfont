@@ -1,4 +1,4 @@
-# The Podcast Font ![Podcast Font](https://podcastfont.com/svg/podcaster/podcastfont.svg)
+# The Podcast Font <img src="https://podcastfont.com/svg/podcaster/podcastfont.svg" alt="The Podcast Font" height="32">
 
 This project contains the source code for the [podcastfont.com](https://podcastfont.com/) website.  
 It was designed as a 100% static website so that it can be easily cached by CDNs. 
