@@ -11,6 +11,7 @@ p {
 
 h1 {
   font-family: 'Podcast Font';
+  font-weight: normal;
   color:  #445;
   padding: 0 0 12pt 0;
   border-bottom: 1px solid #eee;
