@@ -11,7 +11,9 @@ html lang="en"
 		meta id="meta-application-name" name="application-name" content="The Podcast Font"
 		meta id="meta-description" name="description" content="The Podcast Font provides all the icons you need for your podcast website, your podcast app or your podcast documents."
 	body
-		h1 | Help
+		h1
+			| Help
+			i .pi .pi-help
 		p
 			| The Podcast Font is the font you need for all your podcasts!
 		h2 | Quick Start

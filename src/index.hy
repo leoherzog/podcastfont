@@ -27,7 +27,9 @@ html lang="en"
 		meta id="og-image" property="og:image" content="{$base_url}podcastfont-cover.jpg"
 		meta id="og-description" property="og:description" content="The Podcast Font provides all the icons you need for your podcast website, your podcast app or your podcast documents."
 	body
-		h1 | The Podcast Font 
+		h1
+			| The Podcast Font
+			i .pi .pi-podcastfont
 		div .help
 			a href="Help.html"
 				i .pi .pi-help
