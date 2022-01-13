@@ -124,7 +124,7 @@ label:hover {
 .glyph-code {
   font-family: Courier, monospace;
   font-size: 9pt;
-  color: #889;
+  color: #668;
 }
 
 .glyph-code:hover {
@@ -137,7 +137,7 @@ label:hover {
 
 .glyph-unicode {
   float: left;
-  color: #889;
+  color: #668;
 }
 
 .glyph-unicode:hover {
@@ -159,7 +159,7 @@ label:hover {
 .footer {
   font-family: system-ui, sans-serif;
   font-size: 9pt;
-  color: #888;
+  color: #666;
   border-top: 1px solid #eee;
   margin:  12pt 0 0 0;
   padding:  5px;

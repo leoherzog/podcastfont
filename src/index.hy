@@ -8,6 +8,7 @@ html lang="en"
 		link rel="stylesheet" href="{$base_url}index.css"
 		script type="module" src="{$base_url}podcastfont.js"
 		title | The Podcast Font
+		meta name="viewport" content="width=device-width, initial-scale=1"
 		meta id="meta-application-name" name="application-name" content="The Podcast Font"
 		meta id="meta-description" name="description" content="The Podcast Font provides all the icons you need for your podcast website, your podcast app or your podcast documents."
 		meta id="meta-keywords" name="keywords" content="podcast icons, icons, vector icons, svg icons, free icons, icon font, webfont, desktop icons, svg"
@@ -37,7 +38,7 @@ html lang="en"
 				| Download				
 		form action="javascript:void(0);"
 			i .pi .pi-filter
-			| Filter: 
+			label for="filter" | Filter: 
 			input .filter #filter type="text"
 			| ⋮ 
 			span .nowrap
@@ -97,14 +98,11 @@ html lang="en"
 							span class="tooltiptext" | Click to copy $glyph["glyph_name"] glyph
 					if $glyph['glyph_url']:
 						span .glyph-link
-							a .tooltip href="$glyph['glyph_url']" target="_blank" rel="nofollow noopener"
-								i .pi .pi-external-link .tooltip
-								span .tooltiptext | Click to open $glyph['glyph_url']
+							a href="$glyph['glyph_url']" target="_blank" rel="nofollow noopener" title="Click to open $glyph['glyph_url']"
+								i .pi .pi-external-link
 					span .glyph-download
-						a .tooltip href="./svg/{$glyph['glyph_category']}/{$glyph['glyph_id']}.svg"
+						a href="./svg/{$glyph['glyph_category']}/{$glyph['glyph_id']}.svg" title="Right-click “Save link as…” to download $glyph["glyph_name"] SVG file"
 							i .pi .pi-download
-							span .tooltiptext | Right-click “Save link as…” to download $glyph["glyph_name"] SVG file
-
 		div .footer
 			a href="/" | Home
 			for page in $pages:

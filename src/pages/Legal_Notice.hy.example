@@ -7,6 +7,7 @@ html lang="en"
 		link rel="stylesheet" href="{$base_url}releases/{$version}/css/PodcastFont.css" integrity="{$integrity}" crossorigin="anonymous"
 		link rel="stylesheet" href="{$base_url}index.css"
 		title | Legal Notice
+		meta name="viewport" content="width=device-width, initial-scale=1"
 		meta id="meta-application-name" name="application-name" content="The Podcast Font"
 		meta id="meta-description" name="description" content="The Podcast Font provides all the icons you need for your podcast website, your podcast app or your podcast documents."
 	body
