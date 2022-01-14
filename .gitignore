@@ -8,6 +8,9 @@ src/pages/*.hy
 # Ignore all generated HTML pages
 web/*.html
 
+# Ignore minified JS file
+web/*.js
+
 # Ignore all copied SVG files
 web/svg
 
