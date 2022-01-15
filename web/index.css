@@ -3,6 +3,7 @@
 body{
   margin:  50px;
   font-family: system-ui, sans-serif;
+  background: #f8f8fa;
 }
 
 p {
@@ -12,14 +13,14 @@ p {
 h1 {
   font-family: 'Podcast Font';
   font-weight: normal;
-  color:  #445;
+  color:  #000;
   padding: 0 0 12pt 0;
   border-bottom: 1px solid #eee;
 }
 
 h2 {
   font-size: 12pt;
-  color:  #446;
+  color:  #000;
   margin: 24pt 0 0 0;
 }
 
@@ -28,11 +29,11 @@ a {
 }
 
 a:hover {
-  color: #f44;
+  color: #f50;
 }
 
 label:hover {
-  color: #f44;
+  color: #f50;
 }
 
 .right{
@@ -99,11 +100,11 @@ label:hover {
   left: 80px;
   top: 80px;
   font-size: 80pt;
-  color:  #112;
+  color:  #328;
 }
 
 .glyph:hover {
-  color:  #f44;
+  color:  #f50;
 }
 
 
@@ -118,7 +119,7 @@ label:hover {
 }
 
 .icon:hover {
-  color:  #f44;
+  color:  #f50;
 }
 
 .glyph-code {
@@ -128,7 +129,7 @@ label:hover {
 }
 
 .glyph-code:hover {
-  color: f44;
+  color: #f50;
 }
 
 .glyph-name {
@@ -141,7 +142,7 @@ label:hover {
 }
 
 .glyph-unicode:hover {
-  color: #f44;
+  color: #f50;
 }
 
 .glyph-download {
@@ -154,6 +155,10 @@ label:hover {
   position: absolute;
   bottom: 20px;
   left:  20px;
+}
+
+.glyph-link:hover {
+  color:  #f50;
 }
 
 .footer {
@@ -170,7 +175,7 @@ label:hover {
 }
 
 .footer a:hover {
-    color: #f44;
+    color: #f50;
 }
 
 .tooltip {
