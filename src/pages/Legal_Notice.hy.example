@@ -1,4 +1,4 @@
-context $version, $integrity, $base_url, $contact_email, $pages
+context $version, $integrity, $base_url, $plausible_domain, $plausible_script_url, $contact_email, $pages
 doctype
 html lang="en"
 	head
@@ -10,6 +10,9 @@ html lang="en"
 		meta name="viewport" content="width=device-width, initial-scale=1"
 		meta id="meta-application-name" name="application-name" content="The Podcast Font"
 		meta id="meta-description" name="description" content="The Podcast Font provides all the icons you need for your podcast website, your podcast app or your podcast documents."
+		if $plausible_script_url is not None:
+			/ <script defer data-domain="$plausible_domain" src="$plausible_script_url"></script>
+			! <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>		
 	body
 		h1
 			| Legal Notice
@@ -19,7 +22,7 @@ html lang="en"
 		h2 | Contact
 		p
 			if $contact_email is not None:
-				a href="mailto:$contact_email"
+				a href="mailto:$contact_email" data-analytics='"Contact",{{"props":{{"Via":"E-mail"}}}}'
 					| $contact_email
 		h2 | Publication director
 		h2 | Hosting company
@@ -36,11 +39,11 @@ html lang="en"
 				| · 
 				a href="$page['html']" | $page['title']
 			| · 
-			a href="https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Icon request: icon-name&issue[description]=Please provide SVG file and all useful information here." target="_blank"
+			a href="https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Icon request: icon-name&issue[description]=Please provide SVG file and all useful information here." target="_blank" data-analytics='"Contact",{{"props":{{"Via":"Gitlab"}}}}'
 				| Request an Icon
 			| · 
 			if $contact_email is not None:
-				a href="mailto:$contact_email"
+				a href="mailto:$contact_email" data-analytics='"Contact",{{"props":{{"Via":"E-mail"}}}}'
 					| Contact us								
 			span .right
 				| Version $version

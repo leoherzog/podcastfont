@@ -180,7 +180,6 @@ label:hover {
 
 .tooltip {
   position: relative;
-  display: inline-block;
 }
 
 .tooltip .tooltiptext {

@@ -4,6 +4,7 @@ function copy() {
   } else {
     navigator.clipboard.writeText(this.innerText);
   }
+  registerEvent(this.dataset.clipboardAnalytics);
 }
 
 function runFilter(){
@@ -46,32 +47,99 @@ function updateFilter(){
     (document.querySelector('#directory').checked?'&directory':'') +
     (document.querySelector('#misc').checked?'&misc':'');
   runFilter();
-} 
+}
+
+/**
+* Iterate Elements and add event listener
+*
+* @param {NodeList} Array of elements
+* @param {string} callback function name
+*/
+function registerAnalyticsEvents(elements, callback) {
+    for (let i = 0; i < elements.length; i++) {
+        elements[i].addEventListener('click', callback);
+        elements[i].addEventListener('auxclick', callback);
+    }
+}
+
+/**
+* Handle Link Events with plausible
+* https://github.com/plausible/analytics/blob/e1bb4368460ebb3a0bb86151b143176797b686cc/tracker/src/plausible.js#L74
+*
+* @param {Event} click
+*/
+function handleLinkEvent(event) {
+    let link = event.target;
+    let middle = event.type == "auxclick" && event.which == 2;
+    let click = event.type == "click";
+    while (link && (typeof link.tagName == 'undefined' || link.tagName.toLowerCase() != 'a' || !link.href)) {
+        link = link.parentNode;
+    }
+
+    if (middle || click)
+        registerEvent(link.getAttribute('data-analytics'));
+
+    // Delay navigation so that Plausible is notified of the click
+    if (!link.target) {
+        if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
+            setTimeout(function () {
+                location.href = link.href;
+            }, 150);
+            event.preventDefault();
+        }
+    }
+}
+
+/**
+* Parse data and call plausible
+* Using data attribute in html eg. data-analytics='"Register", {"props":{"plan":"Starter"}}'
+*
+* @param {string} data - plausible event "Register", {"props":{"plan":"Starter"}}
+*/
+function registerEvent(data) {
+    // break into array
+    let attributes = data.split(/,(.+)/);
+
+    // Parse it to object
+    let events = [JSON.parse(attributes[0]), JSON.parse(attributes[1] || '{}')];
+
+    plausible(...events);
+}
+
+
 
 window.addEventListener("load", function(event){
-  var links = document.querySelectorAll("[data-type='clipboard']");
-  if (links) {
-        for (var i = 0; i < links.length; i++) {  
-          links[i].addEventListener("click", copy);
-      }
+  if(document.querySelector('#filter')){
+    let filters=location.hash.split('&');
+    if(filters[0].startsWith('#')){
+      document.querySelector('#filter').value = unescape(filters[0].substring(1));
+    }
+    document.querySelector('#podcasting20certified').checked = (filters.includes('podcasting20certified'));
+    document.querySelector('#opensource').checked = (filters.includes('opensource'));
+    document.querySelector('#listener').checked = (filters.includes('listener'));
+    document.querySelector('#podcaster').checked = (filters.includes('podcaster'));
+    document.querySelector('#directory').checked = (filters.includes('directory'));
+    document.querySelector('#misc').checked = (filters.includes('misc'));
+    runFilter();
+    document.querySelector('#listener').addEventListener("change", updateFilter);
+    document.querySelector('#podcaster').addEventListener("change", updateFilter);
+    document.querySelector('#directory').addEventListener("change", updateFilter);
+    document.querySelector('#misc').addEventListener("change", updateFilter);
+    document.querySelector('#podcasting20certified').addEventListener("change", updateFilter);
+    document.querySelector('#opensource').addEventListener("change", updateFilter);
+    document.querySelector('#filter').addEventListener("keyup", updateFilter);
+    document.querySelector('#filter').focus();
   }
-  var filters=location.hash.split('&');
-  if(filters[0].startsWith('#')){
-    document.querySelector('#filter').value = unescape(filters[0].substring(1));
+  let links = document.querySelectorAll("[data-type='clipboard']");
+  for (let i = 0; i < links.length; i++) {  
+    links[i].addEventListener("click", copy);
   }
-  document.querySelector('#podcasting20certified').checked = (filters.includes('podcasting20certified'));
-  document.querySelector('#opensource').checked = (filters.includes('opensource'));
-  document.querySelector('#listener').checked = (filters.includes('listener'));
-  document.querySelector('#podcaster').checked = (filters.includes('podcaster'));
-  document.querySelector('#directory').checked = (filters.includes('directory'));
-  document.querySelector('#misc').checked = (filters.includes('misc'));
-  runFilter();
-  document.querySelector('#listener').addEventListener("change", updateFilter);
-  document.querySelector('#podcaster').addEventListener("change", updateFilter);
-  document.querySelector('#directory').addEventListener("change", updateFilter);
-  document.querySelector('#misc').addEventListener("change", updateFilter);
-  document.querySelector('#podcasting20certified').addEventListener("change", updateFilter);
-  document.querySelector('#opensource').addEventListener("change", updateFilter);
-  document.querySelector('#filter').addEventListener("keyup", updateFilter);
-  document.querySelector('#filter').focus();
+  // Handle link events - those that have data-analytics
+  let elements = document.querySelectorAll("a[data-analytics]");
+  for (let i = 0; i < elements.length; i++) {
+    elements[i].addEventListener('click', handleLinkEvent);
+    elements[i].addEventListener('auxclick', handleLinkEvent);
+  }
+
+
 });

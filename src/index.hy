@@ -1,12 +1,11 @@
-context $version, $integrity, $base_url, $contact_email, $pages, $glyphs
+context $version, $integrity, $base_url, $plausible_domain, $plausible_script_url, $contact_email, $pages, $glyphs
 doctype
 html lang="en"
 	head
 		meta charset="utf-8"
 		link rel="icon" href="favicon.ico"
 		link rel="stylesheet" href="{$base_url}releases/{$version}/css/PodcastFont.css" integrity="{$integrity}" crossorigin="anonymous"
-		link rel="stylesheet" href="{$base_url}index.css"
-		script type="module" src="{$base_url}podcastfont.js"
+		link rel="stylesheet" href="{$base_url}index.css"		
 		title | The Podcast Font
 		meta name="viewport" content="width=device-width, initial-scale=1"
 		meta id="meta-application-name" name="application-name" content="The Podcast Font"
@@ -26,6 +25,10 @@ html lang="en"
 		meta id="og-url" property="og:url" content="{$base_url}"
 		meta id="og-image" property="og:image" content="{$base_url}podcastfont-cover.jpg"
 		meta id="og-description" property="og:description" content="The Podcast Font provides all the icons you need for your podcast website, your podcast app or your podcast documents."
+		script type="module" src="{$base_url}podcastfont.js"
+		if $plausible_script_url is not None:
+			/ <script defer data-domain="$plausible_domain" src="$plausible_script_url"></script>
+			! <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
 	body
 		h1
 			| The Podcast Font
@@ -35,7 +38,7 @@ html lang="en"
 				i .pi .pi-help
 				| Help!
 			| ·
-			a href="package/podcastfont.zip"
+			a href="package/podcastfont.zip" data-analytics='"Download Package"'
 				i .pi .pi-download
 				| Download				
 		form action="javascript:void(0);"
@@ -81,7 +84,7 @@ html lang="en"
 		div .boxes
 			for glyph in $glyphs:
 				div class="box box-$glyph['glyph_category'] $glyph['glyph_box_attributes']" id="$glyph["glyph_unicode"].lower() $glyph['glyph_name'].lower()"
-					span .glyph-unicode .tooltip data-type="clipboard" data-clipboard-content="$glyph["glyph_unicode"]"
+					span .glyph-unicode .tooltip data-type="clipboard" data-clipboard-content="$glyph["glyph_unicode"]" data-clipboard-analytics='"Glyphs",  {{"props":{{"Category":"$glyph['glyph_category']","Action":"Copy Unicode"}}}}'
 						| $glyph["glyph_unicode"]
 						span .tooltiptext | Click to copy $glyph["glyph_name"] Unicode value
 					span .right
@@ -90,20 +93,20 @@ html lang="en"
 						i class="pi pi-$glyph["glyph_category"] icon-category"	
 					h2 .glyph-name
 						| $glyph['glyph_name']
-						i .pi .pi-link .tooltip data-type="clipboard" data-clipboard-content="{$base_url}#$glyph["glyph_unicode"]"
+						i .pi .pi-link .tooltip data-type="clipboard" data-clipboard-content="{$base_url}#$glyph["glyph_unicode"]" data-clipboard-analytics='"Glyphs",  {{"props":{{"Category":"$glyph['glyph_category']","Action":"Copy URL"}}}}'
 							span .tooltiptext | Click to copy link to $glyph["glyph_name"]
-					span .glyph-code .tooltip data-type="clipboard" data-clipboard-content='<i class="pi pi-{$glyph['glyph_id']}"></i>'
+					span .glyph-code .tooltip data-type="clipboard" data-clipboard-content='<i class="pi pi-{$glyph['glyph_id']}"></i>' data-clipboard-analytics='"Glyphs",  {{"props":{{"Category":"$glyph['glyph_category']","Action":"Copy HTML"}}}}'
 						| <i class="pi pi-$glyph['glyph_id']"></i>
 						span .tooltiptext | Click to copy $glyph["glyph_name"] HTML code
 					span .glyph
-						i class="pi pi-$glyph['glyph_id'] tooltip" data-type="clipboard" data-clipboard-content="$glyph['glyph']"
+						i class="pi pi-$glyph['glyph_id'] tooltip" data-type="clipboard" data-clipboard-content="$glyph['glyph']" data-clipboard-analytics='"Glyphs",  {{"props":{{"Category":"$glyph['glyph_category']","Action":"Copy Glyph"}}}}'
 							span class="tooltiptext" | Click to copy $glyph["glyph_name"] glyph
 					if $glyph['glyph_url']:
 						span .glyph-link
-							a href="$glyph['glyph_url']" target="_blank" rel="nofollow noopener" title="Click to open $glyph['glyph_url']"
+							a href="$glyph['glyph_url']" target="_blank" rel="nofollow noopener" title="Click to open $glyph['glyph_url']" data-analytics='"Glyphs",  {{"props":{{"Category":"$glyph['glyph_category']","Action":"Open website"}}}}'
 								i .pi .pi-external-link
 					span .glyph-download
-						a href="./svg/{$glyph['glyph_category']}/{$glyph['glyph_id']}.svg" title="Right-click “Save link as…” to download $glyph["glyph_name"] SVG file"
+						a href="./svg/{$glyph['glyph_category']}/{$glyph['glyph_id']}.svg" title="Right-click “Save link as…” to download $glyph["glyph_name"] SVG file" data-analytics='"Glyphs",  {{"props":{{"Category":"$glyph['glyph_category']","Action":"Download SVG"}}}}'
 							i .pi .pi-download
 		div .footer
 			a href="/" | Home
@@ -111,11 +114,11 @@ html lang="en"
 				| · 
 				a href="$page['html']" | $page['title']
 			| · 
-			a href="https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Icon request: icon-name&issue[description]=Please provide SVG file and all useful information here." target="_blank"
+			a href="https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Icon request: icon-name&issue[description]=Please provide SVG file and all useful information here." target="_blank" data-analytics='"Contact",{{"props":{{"Via":"Gitlab"}}}}'
 				| Request an Icon
 			| · 
 			if $contact_email is not None:
-				a href="mailto:$contact_email"
+				a href="mailto:$contact_email" data-analytics='"Contact",{{"props":{{"Via":"E-mail"}}}}'
 					| Contact us								
 			span .right
 				| Version $version

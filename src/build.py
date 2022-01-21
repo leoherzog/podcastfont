@@ -6,6 +6,7 @@ from dotenv import load_dotenv
 from datetime import datetime, timezone
 from base64 import b64encode
 from jsmin import jsmin
+from urllib.parse import urlparse
 
 def read_csv_file(csv_filename, font, glyphs=None):
 	with open(csv_filename) as csv_file:
@@ -35,6 +36,10 @@ if base_url is None:
 	base_url = ""
 contact_email = os.getenv('CONTACT_EMAIL')
 font_copyright = os.getenv('FONT_COPYRIGHT')
+plausible_script_url = os.getenv('PLAUSIBLE_SCRIPT_URL')
+plausible_domain = None
+if plausible_script_url is not None:
+	plausible_domain=urlparse(base_url).netloc
 
 glyphs = []
 font = fontforge.font()
@@ -82,7 +87,7 @@ for file in os.listdir("./pages"):
 print('Building static index.html page…')
 with open('index.hy') as layout_file:
 	with open('../web/index.html', 'w') as html_file:
-		html_file.write(hypertag.HyperHTML().render(layout_file.read(), version=version, integrity=integrity, base_url=base_url, contact_email=contact_email, pages=pages, glyphs=sorted(glyphs, key=lambda x: x['glyph_name'].lower())))
+		html_file.write(hypertag.HyperHTML().render(layout_file.read(), version=version, integrity=integrity, base_url=base_url, plausible_domain=plausible_domain, plausible_script_url=plausible_script_url, contact_email=contact_email, pages=pages, glyphs=sorted(glyphs, key=lambda x: x['glyph_name'].lower())))
 	
 
 print('Minifying podcastfont.js…')
@@ -95,7 +100,7 @@ for page in pages:
 	print('Building static "'+page['title']+'" page…')
 	with open("./pages/"+page['layout']) as page_file:
 		with open('../web/'+page['html'], 'w') as html_file:
-			html_file.write(hypertag.HyperHTML().render(page_file.read(), version=version, integrity=integrity, base_url=base_url, contact_email=contact_email, pages=pages))
+			html_file.write(hypertag.HyperHTML().render(page_file.read(), version=version, integrity=integrity, base_url=base_url, plausible_domain=plausible_domain, plausible_script_url=plausible_script_url, contact_email=contact_email, pages=pages))
 
 print('Generating OTF font file…')
 font.generate(release_folder+'/fonts/PodcastFont.otf')
