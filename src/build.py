@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import csv, fontforge, sass, shutil, os, hypertag, hashlib
+import csv, fontforge, sass, shutil, os, hypertag, hashlib, qrcode, qrcode.image.svg
 from zipfile import ZipFile
 from dotenv import load_dotenv
 from datetime import datetime, timezone
@@ -49,6 +49,12 @@ font.fontname = 'PodcastFont'
 font.fullname = 'Podcast Font'
 if font_copyright is not None:
 	font.copyright = font_copyright
+
+print('Generating QRcode SVG…')
+qr = qrcode.QRCode(version=1, error_correction=qrcode.constants.ERROR_CORRECT_L, box_size=20, border=2, image_factory=qrcode.image.svg.SvgPathImage)
+qr.add_data(version)
+img = qr.make_image()
+img.save('svg/misc/qrcode.svg')
 
 print('Creating folders…')
 os.makedirs('../web/svg/alphabet', exist_ok=True)

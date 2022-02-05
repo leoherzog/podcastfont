@@ -58,8 +58,8 @@ html lang="en"
 		h2 | More info
 		p
 			| You will find more information at
-			a href="https://podlibre.org/the-podcast-font/"
-				| podlibre.org
+			a href="https://blog.castopod.org/the-podcast-font/"
+				| blog.castopod.org
 			| .
 		h2 | Feedback
 		p

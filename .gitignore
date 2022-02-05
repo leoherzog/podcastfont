@@ -5,6 +5,9 @@
 src/pages/*.hy
 !src/pages/Help.hy
 
+# Ignore qrcode icon (auto-generated)
+src/svg/misc/qrcode.svg
+
 # Ignore all generated HTML pages
 web/*.html
 
