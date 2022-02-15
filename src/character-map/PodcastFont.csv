@@ -5,12 +5,12 @@ blubrry;podcaster;eb03;Blubrry Podcasting;https://blubrry.com/;
 buzzsprout;podcaster;eb04;Buzzsprout;https://www.buzzsprout.com/;podcasting20certifiedbadge
 captivate;podcaster;eb05;Captivate;https://www.captivate.fm/;podcasting20certifiedbadge
 castopod;podcaster;eb06;Castopod;https://castopod.org/;podcasting20certifiedbadge,opensource
-castos;podcaster;eb07;Castos;https://castos.com/;
+castos;podcaster;eb07;Castos;https://castos.com/;podcasting20certifiedbadge
 fireside;podcaster;eb08;Fireside;https://fireside.fm/;podcasting20certifiedbadge
 headliner;podcaster;eb09;Headliner;https://www.headliner.app/;podcasting20certifiedbadge
 jumplink;podcaster;eb0a;Jumplink;https://jump.link/;podcasting20certifiedbadge
 justcast;podcaster;eb0b;Justcast;https://www.justcast.com/;podcasting20certifiedbadge
-libsyn;podcaster;eb0c;Libsyn;https://libsyn.com/;
+libsyn;podcaster;eb0c;Libsyn;https://libsyn.com/;podcasting20certifiedbadge
 podbean;podcaster;eb0d;Podbean;https://www.podbean.com/;
 podcastics;podcaster;eb0e;Podcastics;https://www.podcastics.com/;
 podcastpage;podcaster;eb0f;Podcastpage;https://podcastpage.io/;podcasting20certifiedbadge
@@ -98,3 +98,6 @@ squadcast;podcaster;eb67;SquadCast;https://squadcast.fm/;
 umbrel;podcaster;eb68;Umbrel;https://getumbrel.com/;podcasting20certifiedbadge
 audacy;podcaster;eb69;Audacy;https://audacyinc.com/podcasts/;
 lightninglabs;podcaster;eb6a;Lightning Labs;https://lightning.engineering/;podcasting20certifiedbadge
+usocial;podcaster;eb6b;usocial;https://usocial.me/;podcasting20certifiedbadge
+disctopia;directory;eb6c;Disctopia;https://disctopia.com/;podcasting20certifiedbadge
+3speak;podcaster;eb6d;3Speak;https://3speak.tv/;podcasting20certifiedbadge

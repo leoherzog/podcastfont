@@ -47,6 +47,7 @@ font.encoding = 'UnicodeFull'
 font.familyname = 'Podcast Font'
 font.fontname = 'PodcastFont'
 font.fullname = 'Podcast Font'
+font.version = version
 if font_copyright is not None:
 	font.copyright = font_copyright
 

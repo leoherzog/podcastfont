@@ -1,5 +1,6 @@
 add;misc;f0fe;Add;;
 alarm;misc;f34e;Alarm;;
+appleappstore;misc;f370;Apple App Store;;
 applepodcast;listener;f2ce;Apple Podcast;https://www.apple.com/apple-podcasts/;
 appstore;misc;f36f;App Store;;
 backward;misc;f04a;Backward;;
@@ -38,6 +39,7 @@ fastforward;misc;f050;Fast forward;;
 file;misc;f15b;File;;
 filter;misc;f0b0;filter;;
 forward;misc;f04e;Forward;;
+googleplaystore;misc;f3ab;Google Play Store;;
 headphones;misc;f025;Headphones;;
 heart;misc;f004;Heart;;
 help;misc;f1cd;Help;;
