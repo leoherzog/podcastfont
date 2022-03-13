@@ -64,10 +64,10 @@ html lang="en"
 		h2 | Feedback
 		p
 			| You may open an issue if you want to
-			a href="https://code.castopod.org/ad-aures/podcastfont/-/issues/new?issue[title]=Icon request: icon-name&issue[description]=Please provide SVG file and all useful information here." target="_blank" data-analytics='"Contact",{{"props":{{"Via":"Gitlab"}}}}'
+			a href="https://code.castopod.org/adaures/podcastfont/-/issues/new?issue[title]=Icon request: icon-name&issue[description]=Please provide SVG file and all useful information here." target="_blank" data-analytics='"Contact",{{"props":{{"Via":"Gitlab"}}}}'
 				| request an Icon
 			|  or 
-			a href="https://code.castopod.org/ad-aures/podcastfont/-/issues/new?issue[title]=Error reporting: icon-name&issue[description]=Please provide all useful information here." target="_blank" data-analytics='"Contact",{{"props":{{"Via":"Gitlab"}}}}'
+			a href="https://code.castopod.org/adaures/podcastfont/-/issues/new?issue[title]=Error reporting: icon-name&issue[description]=Please provide all useful information here." target="_blank" data-analytics='"Contact",{{"props":{{"Via":"Gitlab"}}}}'
 				| report an error
 			| .
 		h2 | Source Code
@@ -75,7 +75,7 @@ html lang="en"
 			| All source code used to generate this website is available for download.
 			br
 			| For more informations please go to 
-			a href="https://code.castopod.org/ad-aures/podcastfont" | The Podcast Font GIT repository
+			a href="https://code.castopod.org/adaures/podcastfont" | The Podcast Font GIT repository
 			| .
 		div .footer
 			a href="/" | Home
@@ -83,7 +83,7 @@ html lang="en"
 				| · 
 				a href="$page['html']" | $page['title']
 			| · 
-			a href="https://code.castopod.org/ad-aures/podcastfont/-/issues/new?issue[title]=Icon request: icon-name&issue[description]=Please provide SVG file and all useful information here." target="_blank" data-analytics='"Contact",{{"props":{{"Via":"Gitlab"}}}}'
+			a href="https://code.castopod.org/adaures/podcastfont/-/issues/new?issue[title]=Icon request: icon-name&issue[description]=Please provide SVG file and all useful information here." target="_blank" data-analytics='"Contact",{{"props":{{"Via":"Gitlab"}}}}'
 				| Request an Icon
 			| · 
 			if $contact_email is not None:
