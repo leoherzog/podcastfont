@@ -63,6 +63,7 @@ Done.
 - [hypertag-lang](http://hypertag.io/) (builds the HTML files),
 - [libsass](https://pypi.org/project/libsass/) (builds the CSS files),
 - [jsmin](https://pypi.org/project/jsmin/) (minifies JS).
+- [qrcode](https://pypi.org/project/qrcode/) (generates [QR code](https://podcastfont.com/#f029) glyph with current version number).
 
 ## Adding new glyphs
 
