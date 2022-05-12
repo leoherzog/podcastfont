@@ -76,7 +76,7 @@ podcastindex;directory;eb51;Podcast Index;https://podcastindex.org/;podcasting20
 podnews;directory;eb52;Podnews;https://podnews.net/;podcasting20certifiedbadge
 podcastfont;podcaster;eb53;Podcastfont;https://podcastfont.com/;opensource
 podcastrepublic;listener;eb54;Podcast Republic;https://www.podcastrepublic.net/;podcasting20certifiedbadge
-activitypub;misc;eb55;ActivityPub;https://www.w3.org/TR/activitypub/;
+activitypub;misc;eb55;ActivityPub;https://www.w3.org/TR/activitypub/;opensource
 podcasting20certifiedbadge;podcaster;eb56;Podcasting 2.0 round badge;https://podcastindex.org/;podcasting20certifiedbadge,opensource
 badgeek;podcaster;eb57;BadGeek;https://www.badgeek.fr/;
 podcastmovement;podcaster;eb58;Podcast Movement;https://podcastmovement.com/;
@@ -101,3 +101,4 @@ lightninglabs;podcaster;eb6a;Lightning Labs;https://lightning.engineering/;podca
 usocial;podcaster;eb6b;usocial;https://usocial.me/;podcasting20certifiedbadge
 disctopia;directory;eb6c;Disctopia;https://disctopia.com/;podcasting20certifiedbadge
 3speak;podcaster;eb6d;3Speak;https://3speak.tv/;podcasting20certifiedbadge
+fediverse;misc;eb6e;Fediverse;https://fediverse.party/;opensource
