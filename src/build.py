@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 
-import csv, fontforge, sass, shutil, os, hypertag, hashlib, qrcode, qrcode.image.svg
+import csv, json, fontforge, sass, shutil, os, hypertag, hashlib, qrcode, qrcode.image.svg
 from zipfile import ZipFile
 from dotenv import load_dotenv
 from datetime import datetime, timezone
@@ -72,6 +72,8 @@ read_csv_file('character-map/Alphabet.csv', font)
 read_csv_file('character-map/PodcastFont.csv', font, glyphs)
 read_csv_file('character-map/FontAwesome.csv', font, glyphs)
 icons_map='$icons: ('+', '.join(map(lambda x: '"'+x['glyph_id']+'": "\\'+x['glyph_unicode']+'"', sorted(glyphs, key=lambda x: x['glyph_unicode'])))+');'
+quizdata=list(map(lambda x: {'id': x['glyph_id'],'name': x['glyph_name']}, sorted(filter(lambda x: x['glyph_category']!='misc' or x['glyph_attributes'].count('podcasting20certifiedbadge')>0, glyphs), key=lambda x: x['glyph_id'])))
+
 
 print('Building PodcastFont.css Cascading Style Sheets…')
 icons_map_filename='IconsMap.scss'
@@ -95,7 +97,16 @@ print('Building static index.html page…')
 with open('index.hy') as layout_file:
 	with open('../web/index.html', 'w') as html_file:
 		html_file.write(hypertag.HyperHTML().render(layout_file.read(), version=version, integrity=integrity, base_url=base_url, plausible_domain=plausible_domain, plausible_script_url=plausible_script_url, contact_email=contact_email, pages=pages, glyphs=sorted(glyphs, key=lambda x: x['glyph_name'].lower())))
-	
+
+print('Writing quizdata.json…')
+with open('../web/quizdata.json', 'w') as quiz_js_file:
+	json.dump(quizdata, quiz_js_file)
+
+print('Minifying podcastquiz.js…')
+with open('podcastquiz.js') as js_file:
+    minified_js = jsmin(js_file.read())
+    with open('../web/podcastquiz.js', 'w') as minified_js_file:
+      minified_js_file.write(minified_js)
 
 print('Minifying podcastfont.js…')
 with open('podcastfont.js') as js_file:

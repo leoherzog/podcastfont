@@ -61,6 +61,12 @@ html lang="en"
 			a href="https://blog.castopod.org/the-podcast-font/"
 				| blog.castopod.org
 			| .
+		h2 | Quiz
+		p
+			| The
+			a href="/Quiz.html"
+				| Podcast Quiz
+			| is a tiny game for testing your podcasting knowledge. Please spread the word if you like it!
 		h2 | Feedback
 		p
 			| You may open an issue if you want to

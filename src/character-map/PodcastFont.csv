@@ -74,7 +74,7 @@ listennotes;directory;eb49;Listennotes;https://www.listennotes.com/;
 plink;directory;eb50;Plink;https://plinkhq.com/;podcasting20certifiedbadge
 podcastindex;directory;eb51;Podcast Index;https://podcastindex.org/;podcasting20certifiedbadge,opensource
 podnews;directory;eb52;Podnews;https://podnews.net/;podcasting20certifiedbadge
-podcastfont;podcaster;eb53;Podcastfont;https://podcastfont.com/;opensource
+podcastfont;podcaster;eb53;The Podcast Font;https://podcastfont.com/;opensource
 podcastrepublic;listener;eb54;Podcast Republic;https://www.podcastrepublic.net/;podcasting20certifiedbadge
 activitypub;misc;eb55;ActivityPub;https://www.w3.org/TR/activitypub/;opensource
 podcasting20certifiedbadge;podcaster;eb56;Podcasting 2.0 round badge;https://podcastindex.org/;podcasting20certifiedbadge,opensource
@@ -104,3 +104,4 @@ disctopia;directory;eb6c;Disctopia;https://disctopia.com/;podcasting20certifiedb
 fediverse;misc;eb6e;Fediverse;https://fediverse.party/;opensource
 boomplay;listener;eb6f;Boomplay;https://www.boomplay.com/;
 uncut;podcaster;eb70;Uncut.fm;https://uncut.fm/;
+podcastquiz;misc;eb71;The Podcast Quiz;https://podcastfont.com/Quiz.html;opensource
