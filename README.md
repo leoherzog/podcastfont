@@ -10,7 +10,9 @@ This project is licensed under the [GNU Affero General Public License](https://w
 
 The generated font files are licensed under the [SIL Open Font License (OFL) ](https://scripts.sil.org/OFL).
 
-Some glyphs are from [SVGrepo](https://www.svgrepo.com/) and are licenced under  [(CC0)](https://creativecommons.org/publicdomain/zero/1.0/deed.fr). 
+Some glyphs are from [SVGrepo](https://www.svgrepo.com/) and are licenced under  [(CC0)](https://creativecommons.org/publicdomain/zero/1.0/deed.fr).
+
+All product names, logos, brands, trademarks and registered trademarks are property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names, trademarks and brands does not imply endorsement.
 
 ## Feedback
 
