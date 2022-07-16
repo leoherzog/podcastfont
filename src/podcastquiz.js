@@ -7,7 +7,7 @@
 // Number of questions:
 const maxQuestion=5;
 // Number of possilbe answer for each question:
-const maxAnswer=7;
+const maxAnswer=5;
 // Quiz number, starting July 18th 2022:
 let quizNumber = Math.floor(new Date()/8.64e7) - 19190;
 
@@ -26,7 +26,7 @@ const submitButton = document.getElementById('submitButton');
 const copyButton = document.getElementById('copyButton');
 
 // Pseudo-random function with seed:
-let seed = quizNumber;
+let seed = quizNumber*maxQuestion*maxAnswer;
 function random(maxValue) {
     let x = Math.sin(seed++) * 10000;
     return Math.floor((x - Math.floor(x))*maxValue);
