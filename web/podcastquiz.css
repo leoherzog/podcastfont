@@ -1,3 +1,13 @@
+body{
+	font-size:  14pt;
+}
+
+h2{
+	color: #00564A;
+	font-size: 18pt;
+	margin-bottom: 20px;
+}
+
 .question{
 	font-size: 50px;
 }
@@ -34,11 +44,20 @@
 	background-color: #009787;
 }
 
+.introblock{
+	color: #009486;
+	font-weight: bold;
+	background: #def;
+	border-radius: 25px;
+	padding: 15px;
+	margin: 10px 0 10px 0;
+}
+
 .questionblock{
 	background: #fcfcff;
 	border: solid 1px #e8e8ea;	
 	border-radius: 25px;
-	padding: 0 5px 0 15px;
+	padding: 5px 0 0 20px;
 	margin: 10px 0 10px 0;
 }
 
@@ -63,6 +82,14 @@
  	border-bottom-left-radius: 0;
 	padding: 20px;
 	margin: 10px 0 10px 0;
+}
+
+.answers label:hover {
+  color: #009486;
+}
+
+.answers label input {
+  margin: 10px 8px 0 0;
 }
 
 @media (max-width: 600px) {

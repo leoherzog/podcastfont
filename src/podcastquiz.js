@@ -92,7 +92,7 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
         + '<div class="answers">' + answers.join('') + '</div></div>'
       );
     }
-    quizContainer.innerHTML = '<h2>Quiz number '+ quizNumber +'</h2>'+output.join('');
+    quizContainer.innerHTML = '<h2>Quiz #'+ quizNumber +'</h2>'+output.join('');
     document.getElementById('loading').hidden=true;
   }
   function showResults(questions, quizContainer, resultsContainer){
