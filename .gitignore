@@ -4,6 +4,7 @@
 # Ignore all custom pages, do not ignore the help page
 src/pages/*.hy
 !src/pages/Help.hy
+!src/pages/Quiz.hy
 
 # Ignore qrcode icon (auto-generated)
 src/svg/misc/qrcode.svg

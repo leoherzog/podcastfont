@@ -5,7 +5,7 @@
 */
 
 // Number of questions:
-const maxQuestion=10;
+const maxQuestion=5;
 // Number of possilbe answer for each question:
 const maxAnswer=7;
 // Quiz number, starting July 18th 2022:
