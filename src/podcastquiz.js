@@ -28,7 +28,7 @@ const copyButton = document.getElementById('copyButton');
 // Pseudo-random function with seed:
 let seed = quizNumber*maxQuestion*maxAnswer;
 function random(maxValue) {
-    let x = Math.sin(seed++) * 10000;
+    const x = Math.sin(seed++) * 10000;
     return Math.floor((x - Math.floor(x))*maxValue);
 }
 
