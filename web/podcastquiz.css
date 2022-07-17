@@ -92,6 +92,13 @@ h2{
   margin: 10px 8px 0 0;
 }
 
+.correctanswer{
+	color: #006D60;
+	font-weight: bold;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
 @media (max-width: 600px) {
 	#results{
 		white-space: pre-wrap;

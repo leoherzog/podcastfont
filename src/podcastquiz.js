@@ -53,6 +53,7 @@ for(let questionNum=0;questionNum<maxQuestion;questionNum++){
   let answers={};
   let correctAnswerNum=random(maxAnswer);
   let correctAnswerId;
+  let correctAnswerName;
   for(let answerNum=0;answerNum<maxAnswer;answerNum++){
     let randomAnswerNum=random(quizData.length)
     // Avoid getting twice the same answer for the same question and twice the same correct answer for the quiz:
@@ -63,12 +64,14 @@ for(let questionNum=0;questionNum<maxQuestion;questionNum++){
     correctAnswers.push(quizData[randomAnswerNum].id);
     if(answerNum==correctAnswerNum){
       correctAnswerId=quizData[randomAnswerNum].id;
+      correctAnswerName=quizData[randomAnswerNum].name;
     }
   }
   myQuestions.push(
     {
       answers: answers,
-      correctAnswer: correctAnswerId
+      correctAnswerId: correctAnswerId,
+      correctAnswerName: correctAnswerName,
     });
 }
 
@@ -81,14 +84,14 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
       answers = [];
       for(let letter in questions[i].answers){
         answers.push(
-          '<label>'
+          '<label id="answer'+i+letter+'">'
             + '<input type="radio" name="question'+i+'" value="'+letter+'">'
             + questions[i].answers[letter]
           + '</label><br />'
         );
       }
       output.push(
-        '<div class="questionblock"><div class="question"><i class="pi pi-' + questions[i].correctAnswer + '"></i></div>'
+        '<div class="questionblock"><div class="question"><i class="pi pi-' + questions[i].correctAnswerId + '"></i></div>'
         + '<div class="answers">' + answers.join('') + '</div></div>'
       );
     }
@@ -97,12 +100,20 @@ function generateQuiz(questions, quizContainer, resultsContainer, submitButton){
   }
   function showResults(questions, quizContainer, resultsContainer){
     let answerContainers = quizContainer.querySelectorAll('.answers');
-    let userAnswer = '';
     let numCorrect = 0;
     let score ='';
+
+    document.querySelectorAll('input[type="radio"]').forEach(function(radioButton){ radioButton.disabled = true; });
+
     for(let i=0; i<questions.length; i++){
-      userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
-      if(userAnswer===questions[i].correctAnswer){
+      const userAnswer = (answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;
+      const correctAnswerLabel = document.querySelector('label[id="answer'+i+questions[i].correctAnswerId+'"]');
+      correctAnswerLabel.classList.add('correctanswer');
+      correctAnswerLabel.onclick = function(){
+        window.open('/#'+questions[i].correctAnswerName);
+      }
+
+      if(userAnswer===questions[i].correctAnswerId){
         numCorrect++;
         score+='✅'+(i<questions.length-1?' ':'');
         answerContainers[i].style.color = '#009787';
