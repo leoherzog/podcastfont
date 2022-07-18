@@ -15,6 +15,9 @@ web/*.html
 # Ignore minified JS file
 web/*.js
 
+# Ignore JSON files
+web/*.json
+
 # Ignore all copied SVG files
 web/svg
 
