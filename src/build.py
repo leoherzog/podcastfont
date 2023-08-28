@@ -40,6 +40,8 @@ plausible_script_url = os.getenv('PLAUSIBLE_SCRIPT_URL')
 plausible_domain = None
 if plausible_script_url is not None:
 	plausible_domain=urlparse(base_url).netloc
+matomo_domain = os.getenv('MATOMO_DOMAIN')
+matomo_id = os.getenv('MATOMO_ID')
 
 glyphs = []
 font = fontforge.font()
@@ -96,7 +98,7 @@ for file in os.listdir("./pages"):
 print('Building static index.html page…')
 with open('index.hy') as layout_file:
 	with open('../web/index.html', 'w') as html_file:
-		html_file.write(hypertag.HyperHTML().render(layout_file.read(), version=version, integrity=integrity, base_url=base_url, plausible_domain=plausible_domain, plausible_script_url=plausible_script_url, contact_email=contact_email, pages=pages, glyphs=sorted(glyphs, key=lambda x: x['glyph_name'].lower())))
+		html_file.write(hypertag.HyperHTML().render(layout_file.read(), version=version, integrity=integrity, base_url=base_url, plausible_domain=plausible_domain, plausible_script_url=plausible_script_url, matomo_domain=matomo_domain, matomo_id=matomo_id, contact_email=contact_email, pages=pages, glyphs=sorted(glyphs, key=lambda x: x['glyph_name'].lower())))
 
 print('Writing quizdata.json…')
 with open('../web/quizdata.json', 'w') as quiz_js_file:

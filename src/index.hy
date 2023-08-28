@@ -1,4 +1,4 @@
-context $version, $integrity, $base_url, $plausible_domain, $plausible_script_url, $contact_email, $pages, $glyphs
+context $version, $integrity, $base_url, $plausible_domain, $plausible_script_url, $matomo_domain, $matomo_id, $contact_email, $pages, $glyphs
 doctype
 html lang="en"
 	head
@@ -29,7 +29,23 @@ html lang="en"
 		if $plausible_script_url is not None:
 			/ <script defer data-domain="$plausible_domain" src="$plausible_script_url"></script>
 			! <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
+		if $matomo_domain is not None:
+			script
+				/ var _paq = window._paq = window._paq || [];
+				/ _paq.push(["setDoNotTrack", true]);
+				/ _paq.push(["disableCookies"]);
+				/ _paq.push(['trackPageView']);
+				/ _paq.push(['enableLinkTracking']);
+				/ (function() {{ 
+				/ 	var u="//$matomo_domain/";_paq.push(['setTrackerUrl', u+'matomo.php']);
+				/ 	_paq.push(['setSiteId', '$matomo_id']);
+				/ 	var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+				/ 	g.async=true; g.src=u+'matomo.js';
+				/ 	s.parentNode.insertBefore(g,s); 
+				/ }})();
 	body
+		if $matomo_domain is not None:
+			/ <noscript><p><img src="//$matomo_domain/matomo.php?idsite=$matomo_id&amp;rec=1" style="border:0;" alt="" /></p></noscript>
 		h1
 			| The Podcast Font
 			i .pi .pi-podcastfont
