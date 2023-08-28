@@ -54,7 +54,7 @@ html lang="en"
 				i .pi .pi-help
 				| Help!
 			| ·
-			a href="package/podcastfont.zip" data-analytics='"Download Package"'
+			a href="package/podcastfont.zip" data-analytics='"Download Package"' data-track-content='""'
 				i .pi .pi-download
 				| Download				
 		form action="javascript:void(0);"
@@ -119,10 +119,10 @@ html lang="en"
 							span class="tooltiptext" | Click to copy $glyph["glyph_name"] glyph
 					if $glyph['glyph_url']:
 						span .glyph-link
-							a href="$glyph['glyph_url']" target="_blank" rel="nofollow noopener" title="Click to open $glyph['glyph_url']" data-analytics='"Glyphs",  {{"props":{{"Category":"$glyph['glyph_category']","Action":"Open website"}}}}'
+							a href="$glyph['glyph_url']" target="_blank" rel="nofollow noopener" title="Click to open $glyph['glyph_url']" data-analytics='"Glyphs",  {{"props":{{"Category":"$glyph['glyph_category']","Action":"Open website"}}}}' data-track-content='""'
 								i .pi .pi-external-link
 					span .glyph-download
-						a href="./svg/{$glyph['glyph_category']}/{$glyph['glyph_id']}.svg" title="Right-click “Save link as…” to download $glyph["glyph_name"] SVG file" data-analytics='"Glyphs",  {{"props":{{"Category":"$glyph['glyph_category']","Action":"Download SVG"}}}}'
+						a href="./svg/{$glyph['glyph_category']}/{$glyph['glyph_id']}.svg" title="Right-click “Save link as…” to download $glyph["glyph_name"] SVG file" data-analytics='"Glyphs",  {{"props":{{"Category":"$glyph['glyph_category']","Action":"Download SVG"}}}}' data-track-content='""'
 							i .pi .pi-download
 		div .footer
 			a href="/" | Home
@@ -130,11 +130,11 @@ html lang="en"
 				| · 
 				a href="$page['html']" | $page['title']
 			| · 
-			a href="https://code.castopod.org/adaures/podcastfont/-/issues/new?issue[title]=Icon request: icon-name&issue[description]=Please provide SVG file and all useful information here." target="_blank" data-analytics='"Contact",{{"props":{{"Via":"Gitlab"}}}}'
+			a href="https://code.castopod.org/adaures/podcastfont/-/issues/new?issue[title]=Icon request: icon-name&issue[description]=Please provide SVG file and all useful information here." target="_blank" data-analytics='"Contact",{{"props":{{"Via":"Gitlab"}}}}' data-track-content='""'
 				| Request an Icon
 			| · 
 			if $contact_email is not None:
-				a href="mailto:$contact_email" data-analytics='"Contact",{{"props":{{"Via":"E-mail"}}}}'
+				a href="mailto:$contact_email" data-analytics='"Contact",{{"props":{{"Via":"E-mail"}}}}' data-track-content='""'
 					| Contact us								
 			span .right
 				| Version $version
