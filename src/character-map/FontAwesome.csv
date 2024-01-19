@@ -1,7 +1,7 @@
 add;misc;f0fe;Add;;
 alarm;misc;f34e;Alarm;;
 appleappstore;misc;f370;Apple App Store;;
-applepodcast;listener;f2ce;Apple Podcast;https://www.apple.com/apple-podcasts/;
+applepodcasts;listener;f2ce;Apple Podcasts;https://www.apple.com/apple-podcasts/;
 appstore;misc;f36f;App Store;;
 backward;misc;f04a;Backward;;
 bitcoin;misc;f379;Bitcoin;https://bitcoin.org/;opensource
@@ -118,3 +118,4 @@ volumedown;misc;f027;Volume Down;;
 volumemute;misc;f6a9;Volume Mute;;
 volumeup;misc;f028;Volume Up;;
 world;misc;f0ac;World;;
+hamburger;misc;f0c9;Hamburger;;
