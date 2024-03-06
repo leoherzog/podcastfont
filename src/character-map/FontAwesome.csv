@@ -1,7 +1,7 @@
 add;misc;f0fe;Add;;
 alarm;misc;f34e;Alarm;;
 appleappstore;misc;f370;Apple App Store;;
-applepodcasts;listener;f2ce;Apple Podcasts;https://www.apple.com/apple-podcasts/;
+applepodcasts;listener;f2ce;Apple Podcasts;https://www.apple.com/apple-podcasts/;podcasting20certifiedbadge
 appstore;misc;f36f;App Store;;
 backward;misc;f04a;Backward;;
 bitcoin;misc;f379;Bitcoin;https://bitcoin.org/;opensource
@@ -90,25 +90,26 @@ spotify;listener;f1bc;Spotify;https://www.spotify.com/;
 star;misc;f005;Star;;
 stop;misc;f04d;Stop;;
 tablet;misc;f10a;Device · Tablet;;
-tag-alternateenclosure;misc;f65e;[Tag] Alternate enclosure;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-boostagram;misc;f0e7;[Tag] Boostagram;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-chapters;misc;f0cb;[Tag] Chapters;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-funding;misc;f4c0;[Tag] Funding;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-guid;misc;f2c2;[Tag] GUID;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-images;misc;f302;[Tag] Images;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-indexsearch;misc;f00e;[Tag] Index Search;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-liveitem;misc;f758;[Tag] Live item;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-location;misc;f041;[Tag] Location;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-locked;misc;f023;[Tag] Locked;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-medium;misc;f87c;[Tag] Medium;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-person;misc;f500;[Tag] Person;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-recommendations;misc;f7f5;[Tag] Recommendations;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-season;misc;f0ca;[Tag] Season;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-socialinteract;misc;f086;[Tag] Social interact;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-soundbite;misc;f12e;[Tag] Soundbite;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-trailer;misc;f008;[Tag] Trailer;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-transcript;misc;f20a;[Tag] Transcript;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
-tag-value;misc;f0d6;[Tag] Value for Value;https://github.com/Podcastindex-org/podcast-namespace;podcasting20certifiedbadge
+tag-alternateenclosure;misc;f65e;[Tag] Alternate enclosure;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-boostagram;misc;f0e7;[Tag] Boostagram;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-chapters;misc;f0cb;[Tag] Chapters;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-funding;misc;f4c0;[Tag] Funding;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-guid;misc;f2c2;[Tag] GUID;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-images;misc;f302;[Tag] Images;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-indexsearch;misc;f00e;[Tag] Index Search;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-liveitem;misc;f758;[Tag] Live item;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-location;misc;f041;[Tag] Location;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-locked;misc;f023;[Tag] Locked;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-medium;misc;f87c;[Tag] Medium;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-person;misc;f500;[Tag] Person;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-recommendations;misc;f7f5;[Tag] Recommendations;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-season;misc;f0ca;[Tag] Season;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-socialinteract;misc;f086;[Tag] Social interact;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-soundbite;misc;f12e;[Tag] Soundbite;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-trailer;misc;f008;[Tag] Trailer;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-transcript;misc;f20a;[Tag] Transcript;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-value;misc;f0d6;[Tag] Value for Value;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
+tag-episode;misc;f03a;[Tag] Episode;https://podcasting2.org/podcast-namespace;podcasting20certifiedbadge
 tape;misc;f8ab;Cassette Tape;;
 thumbsup;misc;f164;Thumbs up;;
 tv;misc;f26c;TV;;
@@ -119,3 +120,6 @@ volumemute;misc;f6a9;Volume Mute;;
 volumeup;misc;f028;Volume Up;;
 world;misc;f0ac;World;;
 hamburger;misc;f0c9;Hamburger;;
+mastodon;misc;f4f6;Mastodon;https://joinmastodon.org/;opensource
+trophy;misc;f091;Trophy;;
+home;misc;f015;Home;;
