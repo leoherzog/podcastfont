@@ -1,0 +1,4 @@
+hypertag-lang @ git+https://github.com/ad-aures/hypertag.git
+libsass
+jsmin
+qrcode
