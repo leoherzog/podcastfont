@@ -1,4 +1,4 @@
-#!/usr/bin/python3
+#!env/bin/python3
 
 import csv, json, fontforge, sass, shutil, os, hypertag, hashlib, qrcode, qrcode.image.svg
 from zipfile import ZipFile

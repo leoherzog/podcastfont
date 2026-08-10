@@ -1,4 +1,5 @@
-hypertag-lang @ git+https://github.com/ad-aures/hypertag.git
+hypertag-lang @ git+https://github.com/benjaminbellamy/hypertag.git
 libsass
 jsmin
 qrcode
+python-dotenv

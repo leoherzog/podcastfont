@@ -125,3 +125,37 @@ trophy;misc;f091;Trophy;;
 home;misc;f015;Home;;
 audible;listener;f373;Audible;https://www.audible.com/;
 wave;misc;f899;Audio wave;;
+bluesky;misc;e671;Bluesky;https://bsky.app/;
+discord;misc;f392;Discord;https://discord.com/;
+github;misc;f09b;GitHub;https://github.com/;
+gitlab;misc;f296;GitLab;https://about.gitlab.com/;
+linkedin;misc;f08c;LinkedIn;https://www.linkedin.com/;
+matrix;misc;e8b3;Matrix;https://matrix.org/;opensource
+claude;misc;e861;Claude;https://claude.ai/;
+instagram;misc;f16d;Instagram;https://www.instagram.com/;
+openai;misc;e7cf;OpenAI;https://openai.com/;
+w3c;misc;e7de;W3C;https://www.w3.org/;
+wikipedia;misc;f266;Wikipedia;https://www.wikipedia.org/;opensource
+arrow-down;misc;f063;Arrow down;;
+arrow-left;misc;f060;Arrow left;;
+arrow-right;misc;f061;Arrow right;;
+arrow-up;misc;f062;Arrow up;;
+check;misc;f00c;Check;;
+close;misc;f00d;Close;;
+edit;misc;f044;Edit;;
+eye;misc;f06e;Eye;;
+facebook;misc;f09a;Facebook;https://www.facebook.com/;
+info;misc;f05a;Info;;
+key;misc;f084;Key;;
+kofi;misc;e856;Ko-fi;https://ko-fi.com/;
+mail;misc;f0e0;Mail;;
+patreon;misc;f3d9;Patreon;https://www.patreon.com/;
+paypal;misc;f1ed;PayPal;https://www.paypal.com/;
+reddit;misc;f1a1;Reddit;https://www.reddit.com/;
+signal;misc;e663;Signal;https://signal.org/;opensource
+stripe;misc;f429;Stripe;https://stripe.com/;
+telegram;misc;f2c6;Telegram;https://telegram.org/;
+threads;misc;e618;Threads;https://www.threads.net/;
+tiktok;misc;e07b;TikTok;https://www.tiktok.com/;
+warning;misc;f071;Warning;;
+whatsapp;misc;f232;WhatsApp;https://www.whatsapp.com/;
