@@ -20,14 +20,14 @@ All product names, logos, brands, trademarks and registered trademarks are prope
 
 ## Feedback
 
-You may open an issue if you want to [request an Icon](https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Icon%20request:%20icon-name&issue[description]=Please%20provide%20SVG%20file%20and%20all%20useful%20information%20here.) or [report an error](https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Error%20reporting:%20icon-name&issue[description]=Please%20provide%20all%20useful%20information%20here.).
+You may open an issue if you want to [request an Icon](https://codeberg.org/adaures/podcastfont/issues/new?title=Icon%20request:%20icon-name&body=Please%20provide%20SVG%20file%20and%20all%20useful%20information%20here.) or [report an error](https://codeberg.org/adaures/podcastfont/issues/new?title=Error%20reporting:%20icon-name&body=Please%20provide%20all%20useful%20information%20here.).
 
 ## Generate the website
 
 - Clone this repository,
 
 ```
-$ git clone https://code.podlibre.org/podlibre/podcastfont.git
+$ git clone https://codeberg.org/adaures/podcastfont.git
 ```
 
 - go to the `src/` folder and create the `env/` virtual environment, then install the Python dependencies,
