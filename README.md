@@ -12,19 +12,32 @@ The generated font files are licensed under the [SIL Open Font License (OFL) ](h
 
 Some glyphs are from [SVGrepo](https://www.svgrepo.com/) and are licenced under  [(CC0)](https://creativecommons.org/publicdomain/zero/1.0/deed.fr).
 
+Some glyphs are from [Simple Icons](https://simpleicons.org/) and are licenced under  [(CC0)](https://creativecommons.org/publicdomain/zero/1.0/deed.fr).
+
+Some glyphs are from [Remix Icon](https://remixicon.com/) and are licenced under the [Apache License 2.0](https://www.apache.org/licenses/LICENSE-2.0).
+
 All product names, logos, brands, trademarks and registered trademarks are property of their respective owners. All company, product and service names used in this website are for identification purposes only. Use of these names, trademarks and brands does not imply endorsement.
 
 ## Feedback
 
-You may open an issue if you want to [request an Icon](https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Icon%20request:%20icon-name&issue[description]=Please%20provide%20SVG%20file%20and%20all%20useful%20information%20here.) or [report an error](https://code.podlibre.org/podlibre/podcastfont/-/issues/new?issue[title]=Error%20reporting:%20icon-name&issue[description]=Please%20provide%20all%20useful%20information%20here.).
+You may open an issue if you want to [request an Icon](https://codeberg.org/adaures/podcastfont/issues/new?title=Icon%20request:%20icon-name&body=Please%20provide%20SVG%20file%20and%20all%20useful%20information%20here.) or [report an error](https://codeberg.org/adaures/podcastfont/issues/new?title=Error%20reporting:%20icon-name&body=Please%20provide%20all%20useful%20information%20here.).
 
 ## Generate the website
 
 - Clone this repository,
 
 ```
-$ git clone https://code.podlibre.org/podlibre/podcastfont.git
+$ git clone https://codeberg.org/adaures/podcastfont.git
 ```
+
+- go to the `src/` folder and create the `env/` virtual environment, then install the Python dependencies,
+
+```
+src$ /usr/bin/python3 -m venv --system-site-packages env
+src$ ./env/bin/pip install -r requirements.txt
+```
+
+  The `--system-site-packages` option is required: `fontforge` is a compiled system module that `pip` cannot install, so the virtual environment has to be created from the interpreter that already provides it.
 
 - Copy the `.env.example` file to `.env` and customize the values according to your needs, if necessary,
 
@@ -36,7 +49,7 @@ FONT_COPYRIGHT = "Copyright (c) 2021 - SIL Open Font License 1.1"
 ```
 
 - If you want to, create and/or edit `.hy` pages in  the `src/pages/` folder using [hypertag](http://hypertag.io/),
-- go to the `src/` folder and run the `build.py` script,
+- from the `src/` folder, run the `build.py` script,
 
 ```
 src$ ./build.py 
@@ -60,12 +73,17 @@ Done.
 
 ## Requirements
 
-- [python3-fontforge](https://fontforge.org/docs/scripting/python.html) (generates the font files),
-- [python3-dotenv](https://pypi.org/project/python-dotenv/) (reads `.env` parameters),
+Install [python3-fontforge](https://fontforge.org/docs/scripting/python.html) (generates the font files) with your system package manager: it is a compiled module and is not available on PyPI.
+
+The remaining dependencies are listed in `src/requirements.txt` and are installed by `pip`:
+
+- [python-dotenv](https://pypi.org/project/python-dotenv/) (reads `.env` parameters),
 - [hypertag-lang](http://hypertag.io/) (builds the HTML files),
 - [libsass](https://pypi.org/project/libsass/) (builds the CSS files),
 - [jsmin](https://pypi.org/project/jsmin/) (minifies JS).
 - [qrcode](https://pypi.org/project/qrcode/) (generates [QR code](https://podcastfont.com/#f029) glyph with current version number).
+
+`build.py` runs on the `src/env/` virtual environment (see its shebang), so it must be started from the `src/` folder.
 
 ## Adding new glyphs
 

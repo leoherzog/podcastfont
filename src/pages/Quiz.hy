@@ -55,7 +55,7 @@ html lang="en"
 				| · 
 				a href="$page['html']" | $page['title']
 			| · 
-			a href="https://code.castopod.org/adaures/podcastfont/-/issues/new?issue[title]=Icon request: icon-name&issue[description]=Please provide SVG file and all useful information here." target="_blank" data-analytics='"Contact",{{"props":{{"Via":"Gitlab"}}}}'
+			a href="https://codeberg.org/adaures/podcastfont/issues/new?title=Icon request: icon-name&body=Please provide SVG file and all useful information here." target="_blank" data-analytics='"Contact",{{"props":{{"Via":"Codeberg"}}}}'
 				| Request an Icon
 			| · 
 			if $contact_email is not None:
