@@ -1,0 +1,22 @@
+const maxQuestion=5;const maxAnswer=5;let quizNumber=Math.floor(new Date()/8.64e7)-19190;if(location.hash.startsWith('#')){const inputQuizNumber=parseInt(location.hash.substring(1));if(inputQuizNumber<quizNumber){quizNumber=inputQuizNumber;}}
+const quizContainer=document.getElementById('quiz');const resultsContainer=document.getElementById('results');const submitButton=document.getElementById('submitButton');const copyButton=document.getElementById('copyButton');let seed=quizNumber*maxQuestion*maxAnswer;function random(maxValue){const x=Math.sin(seed++)*10000;return Math.floor((x-Math.floor(x))*maxValue);}
+function copyResults(content){navigator.clipboard.writeText(content);}
+let quizData=null;let response=await fetch('./quizdata.json');if(response.ok){quizData=await response.json();}else{alert("HTTP-Error: "+response.status);}
+let myQuestions=[];let correctAnswers=[];for(let questionNum=0;questionNum<maxQuestion;questionNum++){let answers={};let correctAnswerNum=random(maxAnswer);let correctAnswerId;let correctAnswerName;for(let answerNum=0;answerNum<maxAnswer;answerNum++){let randomAnswerNum=random(quizData.length)
+while(answers.hasOwnProperty(quizData[randomAnswerNum].id)||(answerNum==correctAnswerNum&&correctAnswers.includes(quizData[randomAnswerNum].id))){randomAnswerNum=(randomAnswerNum+1)%quizData.length;}
+answers[quizData[randomAnswerNum].id]=quizData[randomAnswerNum].name;correctAnswers.push(quizData[randomAnswerNum].id);if(answerNum==correctAnswerNum){correctAnswerId=quizData[randomAnswerNum].id;correctAnswerName=quizData[randomAnswerNum].name;}}
+myQuestions.push({answers:answers,correctAnswerId:correctAnswerId,correctAnswerName:correctAnswerName,});}
+function generateQuiz(questions,quizContainer,resultsContainer,submitButton){function showQuestions(questions,quizContainer){let output=[];let answers;for(let i=0;i<questions.length;i++){answers=[];for(let letter in questions[i].answers){answers.push('<label id="answer'+i+letter+'">'
++'<input type="radio" name="question'+i+'" value="'+letter+'">'
++questions[i].answers[letter]
++'</label><br />');}
+output.push('<div class="questionblock"><div class="question"><i class="pi pi-'+questions[i].correctAnswerId+'"></i></div>'
++'<div class="answers">'+answers.join('')+'</div></div>');}
+quizContainer.innerHTML='<h2>Quiz #'+quizNumber+'</h2>'+output.join('');document.getElementById('loading').hidden=true;}
+function showResults(questions,quizContainer,resultsContainer){let answerContainers=quizContainer.querySelectorAll('.answers');let numCorrect=0;let score='';document.querySelectorAll('input[type="radio"]').forEach(function(radioButton){radioButton.disabled=true;});for(let i=0;i<questions.length;i++){const userAnswer=(answerContainers[i].querySelector('input[name=question'+i+']:checked')||{}).value;const correctAnswerLabel=document.querySelector('label[id="answer'+i+questions[i].correctAnswerId+'"]');correctAnswerLabel.classList.add('correctanswer');correctAnswerLabel.onclick=function(){window.open('/#'+questions[i].correctAnswerName);}
+if(userAnswer===questions[i].correctAnswerId){numCorrect++;score+='✅'+(i<questions.length-1?' ':'');answerContainers[i].style.color='#009787';}
+else{score+='❌'+(i<questions.length-1?' ':'');answerContainers[i].style.color='#ff2040';}}
+submitButton.hidden=true;resultsContainer.innerHTML='I scored '+numCorrect+'/'+questions.length+' at the #PodcastQuiz number '+quizNumber+'!\n'+score+'\nhttps://podcastfont.com/Quiz.html#'+quizNumber+' by @PodcastFont';resultsContainer.style.visibility='visible';copyButton.style.visibility='visible';}
+showQuestions(questions,quizContainer);submitButton.onclick=function(){showResults(questions,quizContainer,resultsContainer);}
+copyButton.onclick=function(){copyResults(document.getElementById('results').innerHTML);}}
+generateQuiz(myQuestions,quizContainer,resultsContainer,submitButton);
